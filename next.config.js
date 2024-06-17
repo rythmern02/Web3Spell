@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-
-module.exports = nextConfig
+module.exports = {
+    modules: true,
+    images: {
+        domains: ['ap-south-1.graphassets.com'],
+    }
+};
