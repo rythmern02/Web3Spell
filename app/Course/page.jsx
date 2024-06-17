@@ -31,7 +31,7 @@ const Page = () => {
       {Course.length > 0 && (
         <div className="h-full w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-5 px-10">
           {Course.map((course) => (
-            <Link kry={course.id} href={"/course-preview/" + course.id}>
+            <Link key={course.id} href={"/course-preview/" + course.id}>
               <CourseCard
                 key={course.id} 
                 src={course.banner.url}
