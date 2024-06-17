@@ -6,7 +6,7 @@ import CategoryFilter from '@/components/sub/CategoryFilter'
 import Link from 'next/link'
 import CourseCard from '@/components/sub/CourseCard'
 
-const page = () => {
+const Page = () => {
   
   const [Course, setCourse] = useState([]);
 
@@ -47,4 +47,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
