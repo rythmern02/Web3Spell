@@ -1,15 +1,15 @@
-import Encryption from "@/components/main/Encryption";
+"use client"
 import Hero from "@/components/main/Hero";
-import Courses from "@/components/main/Courses";
+import Page from "./Course/page";
 import Skills from "@/components/main/Skills";
+
 
 export default function Home() {
   return (
     <main className="h-full w-full">
       <div className="flex flex-col gap-20">
         <Hero />
-        <Courses/>
-        {/* <Encryption /> */}
+        <Page/>
         <Skills />
       </div>
     </main>
