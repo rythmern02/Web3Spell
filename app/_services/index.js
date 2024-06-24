@@ -28,7 +28,7 @@ export const getCourseList = async () => {
   return result;
 };
 
-export const getCourseById = async (courseId) => {
+export const getCourseById = async (courseId, userEmail) => {
   const query = gql`
     query course {
       courseList(where: { id: "${courseId}" }) {
@@ -51,9 +51,38 @@ export const getCourseById = async (courseId) => {
         tag
         updatedAt
       }
-    }
+    userEnrollCourses(where: {courseId: "${courseId}", userEmail: "${userEmail}"}) {
+    courseId
+    userEmail
+    completedChapter
+  }
+  }
   `;
 
   const result = await request(MASTER_URL, query);
   return result;
 };
+
+export const EnrollCourse = async (courseId, userEmail) => {
+  const mutateQuery = gql`
+  mutation EnrollCourse {
+  createUserEnrollCourse(data: {courseId: "${courseId}", userEmail: "${userEmail}"}) {
+    id
+  }
+}
+`;
+  const result = await request(MASTER_URL, mutateQuery);
+  return result;
+}
+
+export const PublishCourse = async (id) => {
+  const mutateQuery = gql`
+  mutation PublishCourse {
+  publishUserEnrollCourse(where: {id: "${id}"}) {
+    id
+  }
+}
+  `;
+  const result = await request(MASTER_URL, mutateQuery);
+  return result;
+}
