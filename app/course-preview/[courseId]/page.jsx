@@ -1,37 +1,43 @@
 "use client";
 import { getCourseById } from "@/app/_services";
-import CourseDetail from "@/components/sub/CourseDetail";
-import EnrollmentSection from "@/components/sub/EnrollmentSection";
-import Options from "@/components/sub/Options";
-import VideoPlayer from "@/components/sub/VideoPlayer";
+import { useUser } from "@clerk/nextjs";
 import React, { useEffect, useState } from "react";
+import CourseDetail from "../_component/CourseDetail";
+import EnrollmentSection from "../_component/EnrollmentSection";
+import Options from "../_component/Options";
+import VideoPlayer from "../_component/VideoPlayer";
 
 const Page = ({ params }) => {
   const [courseDetail, setCourseDetail] = useState([]);
+  const [userCourse, setUserCourse] = useState([]);
+  const {user} = useUser();
+  
   useEffect(() => {
     getCourses();
-  }, []);
+  }, [user]);
 
-  const getCourses = () => {
-    getCourseById(params.courseId).then((res) => {
+  const getCourses = async() => {
+     await getCourseById(params.courseId,user?.primaryEmailAddress?.emailAddress ).then((res) => {
       setCourseDetail(res.courseList);
+      setUserCourse(res.userEnrollCourses[0]);
+      console.log("This is RNNNNNNN!",res.userEnrollCourses[0]);
     });
   };
 
-
   if (!courseDetail.chapter || !courseDetail.chapter[0].video.url) {
-    return <div>Loading...</div>;
+    return <div className="mt-40 text-white">Loading...</div>;
   }
+
   return (
     <div className="mt-24 z-20 relative grid md:grid-cols-3 p-4">
       <div className="col-span-2">
-        <VideoPlayer videoURL={courseDetail.chapter[0].video.url}/>
-        <CourseDetail courseDetail={courseDetail}/>
+        {courseDetail?.chapter[0]? <VideoPlayer videoURL={courseDetail.chapter[0].video.url}/>: null}
+        <CourseDetail courseDetail={courseDetail} />
       </div>
       <div className="p-5">
         <div className="mx-5 md:mt-[50px]">
         <Options />
-        <EnrollmentSection courseDetail={courseDetail}/>
+        <EnrollmentSection courseDetail={courseDetail} params={params} userCourse={userCourse}/>
         </div>
       </div>
     </div>
