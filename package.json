@@ -1,5 +1,5 @@
 {
-  "name": "spaceportfolio",
+  "name": "web3spell",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "@clerk/nextjs": "^5.1.5",
     "@heroicons/react": "^2.0.18",
+    "fs": "^0.0.1-security",
     "graphql": "^16.8.2",
     "graphql-request": "^7.0.1",
     "next": "13.5.6",
