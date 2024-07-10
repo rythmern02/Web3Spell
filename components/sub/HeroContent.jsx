@@ -13,9 +13,10 @@ import { useUser } from "@clerk/nextjs";
 
 const HeroContent = () => {
   const [screenSize, setScreenSize] = useState("desktop");
-  const [user, setUser] = useState();
-  const userInstance = useUser();
+  const [user, setUser] = useState(null);
+  const userin = useUser();
   useEffect(() => {
+    setUser(userin);
     const checkScreenSize = () => {
       const width = window.innerWidth;
       // More accurate breakpoints and dynamic sizing
@@ -89,13 +90,21 @@ const HeroContent = () => {
           Solana. Forge a path to a wondrous Web3 career at Web3Spell. Shape the
           future of the decentralized universe!
         </motion.p>
-        {!user && (
+        {user?.name != null ? (
           <motion.a
             variants={slideInFromLeft(1)}
             className="py-2 px-4 bg-blue-700 hover:bg-blue-900 text-center text-white cursor-pointer rounded-lg max-w-[200px]"
             href={"/sign-up"}
           >
             Sign Up Now!
+          </motion.a>
+        ) : (
+          <motion.a
+            variants={slideInFromLeft(1)}
+            className="py-2 px-4 bg-blue-700 hover:bg-blue-900 text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+            href={"/Course"}
+          >
+            Let's Go!
           </motion.a>
         )}
       </div>
