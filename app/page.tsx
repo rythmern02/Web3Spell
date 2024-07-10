@@ -2,7 +2,7 @@
 import Hero from "@/components/main/Hero";
 import Page from "./Course/page";
 import Skills from "@/components/main/Skills";
-import VideoShowcase from "@/components/main/videoShowcase"
+import VideoShowcase from "@/components/main/VideoShowcase"
  
 export default function Home() {
   return (
