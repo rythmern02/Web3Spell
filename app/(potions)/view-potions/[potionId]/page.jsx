@@ -4,7 +4,7 @@ import PotionNav from "./_component/PotionNav";
 import PotionVideoPlayer from "./_component/PotionVideoPlayer";
 import { useUser } from "@clerk/nextjs";
 import { getCourseById } from "@/app/_services";
-const Page = ({ params }) => {
+const page = ({ params }) => {
   const [courseDetail, setCourseDetail] = useState([]);
   const [userCourse, setUserCourse] = useState([]);
   const [activeChapter, setActiveChapter] = useState();
@@ -39,4 +39,4 @@ const Page = ({ params }) => {
   );
 };
 
-export default Page;
+export default page;
