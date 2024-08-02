@@ -36,6 +36,7 @@ export const getCourseById = async (courseId, userEmail) => {
           ... on Chapter {
             id
             name
+            chapterNumber
             video {
               url
             }
@@ -54,7 +55,11 @@ export const getCourseById = async (courseId, userEmail) => {
     userEnrollCourses(where: {courseId: "${courseId}", userEmail: "${userEmail}"}) {
     courseId
     userEmail
-    completedChapter
+    id
+    completedChapter {
+    ... on CompletedChapter {
+      chapterId
+    }}
   }
   }
   `;
@@ -85,4 +90,27 @@ export const PublishCourse = async (id) => {
   `;
   const result = await request(MASTER_URL, mutateQuery);
   return result;
+}
+
+export const markChapterCompletedG = async (recordId, chapterNumber) => {
+  const mutateQuery = gql`
+mutation markChapterComplete {
+  updateUserEnrollCourse(
+    where: {id: "${recordId}"}
+    data: {completedChapter: {create: {CompletedChapter: {data: {chapterId: "${chapterNumber}"}}}}}
+  ) {
+    id
+  }
+  publishManyUserEnrollCoursesConnection(to: PUBLISHED) {
+    edges {
+      node {
+        id
+      }
+    }
+  } 
+}
+  `
+  const result = await request(MASTER_URL, mutateQuery);
+  return result;
+
 }

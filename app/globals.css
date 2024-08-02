@@ -354,3 +354,9 @@ padding: inherit;
   width: 100%;
   height: 100%;
 }
+
+.hello-text {
+  background: linear-gradient(90deg, #200be1 20.01%, #5858d8 60.1%, #040c66 100%, #64a8f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

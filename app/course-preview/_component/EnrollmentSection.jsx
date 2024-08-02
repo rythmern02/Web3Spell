@@ -6,7 +6,7 @@ import React, { useEffect } from "react";
 const EnrollmentSection = ({ courseDetail, params, userCourse }) => {
   const { user } = useUser();
   const router = useRouter();
-
+  
   const enrollCourse = async () => {
     if (user) {
       await EnrollCourse(
@@ -17,10 +17,10 @@ const EnrollmentSection = ({ courseDetail, params, userCourse }) => {
           console.log(resp?.createUserEnrollCourse?.id)
           await PublishCourse(resp?.createUserEnrollCourse?.id).then
           (
-            (result) => {
+            async (result) => {
               console.log(result);
               if(result){
-                router.push('/view-potions/', courseDetail.courseId);
+                router.push(`/view-potions/${params.courseId}`);
               }
             }
           );
@@ -40,7 +40,7 @@ const EnrollmentSection = ({ courseDetail, params, userCourse }) => {
         weave enchantments in Web3, Blockchain, AI, UI/UX, and other potent
          spells.
         </h2>
-        <button className="cursor-pointer p-2 w-full bg-purple-500 text-white rounded-lg text-[16px] mt-2 hover:bg-purple-700 " onClick={ ()=>router.push('/view-potions/'+params.courseId)}>
+        <button className="cursor-pointer p-2 w-full bg-blue-700 text-white rounded-lg text-[16px] mt-2 hover:bg-blue-900 " onClick={ ()=>router.push('/view-potions/'+params.courseId)}>
           Continue
         </button>
 
@@ -53,7 +53,7 @@ const EnrollmentSection = ({ courseDetail, params, userCourse }) => {
           weave enchantments in Web3, Blockchain, AI, UI/UX, and other potent
           spells.
         </h2>
-        <button className="cursor-pointer p-2 w-full bg-purple-500 text-white rounded-lg text-[16px] mt-2 hover:bg-purple-700 " onClick={()=>enrollCourse()}>
+        <button className="cursor-pointer p-2 w-full bg-blue-700 text-white rounded-lg text-[16px] mt-2 hover:bg-blue-900 " onClick={()=>enrollCourse()}>
           Enroll Now
         </button>
       </div>
