@@ -77,11 +77,13 @@ const Navbar = () => {
                       Courses
                     </Link>
 
-                    <Link href="/About" className="cursor-pointer">
-                      Community
-                    </Link>
-                    <Link href="/About" className="cursor-pointer">
-                      About
+                    {user && (
+                      <Link href="/dashboard" className="cursor-pointer">
+                        Dashboard
+                      </Link>
+                    )}
+                    <Link href="/Guides" className="cursor-pointer">
+                      Guides
                     </Link>
                     <div className="flex flex-row gap-4">
                       {!user ? (
@@ -163,7 +165,7 @@ const Navbar = () => {
       );
     }
     return (
-      <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 hellonav">
+      <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#170a6053]/50  bg-[#03001417]  backdrop-blur-md z-50 px-10 hellonav">
         <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
           <Link
             href="/"
@@ -178,21 +180,20 @@ const Navbar = () => {
             />
           </Link>
           <div className="w-[600px] h-full flex flex-row items-center justify-between md:mr-20">
-            <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+            <div className="flex items-center justify-between w-full h-auto border border-[#170a60e2] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
               <Link href="/" className="cursor-pointer px-3">
                 Home
               </Link>
               <Link href="/Course" className="cursor-pointer px-3">
                 Courses
               </Link>
-              <Link href="/Community" className="cursor-pointer px-3">
-                Community
-              </Link>
-              <Link href="/About" className="cursor-pointer px-3">
-                About
-              </Link>
-              <Link href="/Quiz" className="cursor-pointer px-3">
-                Quizzes
+              {user && (
+                <Link href="/dashboard" className="cursor-pointer px-3">
+                  Dashboard
+                </Link>
+              )}
+              <Link href="/Guides" className="cursor-pointer px-3">
+                Guides
               </Link>
             </div>
           </div>
