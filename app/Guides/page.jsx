@@ -7,31 +7,31 @@ const guides = [
   {
     title: "Intro to Blockchain Technology",
     description: "Understand the fundamental concepts of blockchain technology.",
-    image: "/introtoblockchain.png", // Replace with your image paths
+    image: "/introtoblockchain.png", 
     link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Intro%20to%20Blockchain%20Technology.pdf"
   },
   {
     title: "Solana's Architecture: An in-depth explanation",
     description: "Unveiling the mystical secrets behind Solana's innovative blockchain design",
-    image: "/solanaarchitecture.png", // Replace with your image paths
+    image: "/solanaarchitecture.png", 
     link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Solana's%20Architecture.pdf"
   },
   {
     title: "Rust Refresher: A Guide to complete beginners",
     description: "Explore the latest trends and updates in the Rust programming language.",
-    image: "/rust-refresher.webp", // Replace with your image paths
-    link: "https://github.com/rythmern02/Web3Spell/tree/main/Guides/Anchor%20SPL%20Token%20Programme"
+    image: "/rust-refresher.webp", 
+    link: "https://github.com/rythmern02/Web3Spell/tree/main/Guides/Rust-Refresher"
   },
   {
     title: "Creating an SPL token with the help of Anchor",
     description: "This guide will walk you through each line of the code, providing a deep understanding of how the token program operates.",
-    image: "/anchor-spl.webp", // Replace with your image paths
-    link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Intro%20to%20Blockchain%20Technology.pdf"
+    image: "/anchor-spl.webp", 
+    link: "https://github.com/rythmern02/Web3Spell/tree/main/Guides/Anchor%20SPL%20Token%20Programme"
   },
   {
     title: "Security and best practices in Solana Development",
     description: "Understanding the significance of security in Solana Development",
-    image: "/securityintro.png", // Replace with your image paths
+    image: "/securityintro.png", 
     link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Best%20practices%20in%20Solana%20Development.pdf"
   },
 ];
