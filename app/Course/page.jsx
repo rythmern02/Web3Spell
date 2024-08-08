@@ -21,9 +21,9 @@ const Page = () => {
   };
 
   return (
-    <div className=' relative z-20 md:mt-16'>
+    <div className=' relative z-20 '>
       <div className="flex flex-col items-center justify-center " id="Courses">
-      <h1 className="text-[30px] text-transparent text-white bg-clip-text  mb-5">
+      <h1 className="text-[30px] text-transparent text-white bg-clip-text mt-16 lg:mt-24  mb-5">
         Our Courses
       </h1>
       <div  className='flex flex-col'>
