@@ -1,28 +1,39 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import { FiBookOpen } from "react-icons/fi";
 
 const guides = [
   {
-    title: "Intro to Solana Development",
-    description: "Learn the basics of Solana development and how to get started.",
-    image: "/Coming.jpg" // Replace with your image paths
-  },
-  {
     title: "Intro to Blockchain Technology",
     description: "Understand the fundamental concepts of blockchain technology.",
-    image: "/Coming.jpg" // Replace with your image paths
+    image: "/introtoblockchain.png", // Replace with your image paths
+    link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Intro%20to%20Blockchain%20Technology.pdf"
   },
   {
-    title: "Hello this is RN",
-    description: "Explore the latest trends and updates in the blockchain world.",
-    image: "/Coming.jpg" // Replace with your image paths
+    title: "Solana's Architecture: An in-depth explanation",
+    description: "Unveiling the mystical secrets behind Solana's innovative blockchain design",
+    image: "/solanaarchitecture.png", // Replace with your image paths
+    link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Solana's%20Architecture.pdf"
   },
   {
-    title: "Welcome in the world of Blockchain",
-    description: "Get an overview of the blockchain ecosystem and its applications.",
-    image: "/Coming.jpg" // Replace with your image paths
-  }
+    title: "Rust Refresher: A Guide to complete beginners",
+    description: "Explore the latest trends and updates in the Rust programming language.",
+    image: "/rust-refresher.webp", // Replace with your image paths
+    link: "https://github.com/rythmern02/Web3Spell/tree/main/Guides/Anchor%20SPL%20Token%20Programme"
+  },
+  {
+    title: "Creating an SPL token with the help of Anchor",
+    description: "This guide will walk you through each line of the code, providing a deep understanding of how the token program operates.",
+    image: "/anchor-spl.webp", // Replace with your image paths
+    link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Intro%20to%20Blockchain%20Technology.pdf"
+  },
+  {
+    title: "Security and best practices in Solana Development",
+    description: "Understanding the significance of security in Solana Development",
+    image: "/securityintro.png", // Replace with your image paths
+    link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Best%20practices%20in%20Solana%20Development.pdf"
+  },
 ];
 
 const GuidesPage = () => {
@@ -53,12 +64,12 @@ const GuidesPage = () => {
               <p className="text-sm text-gray-400 mb-4">
                 {guide.description}
               </p>
-              <a
-                href="#"
+              <Link
+                href={guide.link}
                 className="text-purple-500 hover:underline"
               >
                 Read More
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
