@@ -36,8 +36,8 @@ const Navbar = () => {
     if (isMobile) {
       return (
         <div
-          className={`navbar fixed top-0 right-0 w-full z-50 transition-transform duration-500 ease-in-out ${
-            isOpen ? "translate-y-0 " : "-translate-y-full mt-16"
+          className={`navbar fixed top-0 right-0 w-full z-50 transition-transform duration-500 ease-in-out backdrop-filter backdrop-blur-lg ${
+            isOpen ? "translate-y-0 " : "-translate-y-full mt-[55px]"
           }`}
         >
           <div className="flex flex-row gap-8   ">
