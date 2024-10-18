@@ -34,6 +34,12 @@ const guides = [
     image: "/securityintro.png", 
     link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Best%20practices%20in%20Solana%20Development.pdf"
   },
+    {
+    title: "Wormhole - Bridging the Fragmented Web3 Landscape",
+    description: "Wormhole is a decentralized messaging protocol bridging different blockchains, enhancing interoperability and liquidity in the Web3 ecosystem.",
+    image: "/wormhole.png", 
+    link: "https://github.com/rythmern02/Web3Spell/blob/main/Guides/Best%20practices%20in%20Solana%20Development.pdf"
+  },
 ];
 
 const GuidesPage = () => {
