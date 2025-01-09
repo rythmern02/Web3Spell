@@ -76,7 +76,9 @@ const Navbar = () => {
                     <Link href="/Course" className="cursor-pointer">
                       Courses
                     </Link>
-
+                     <Link href="/Events" className="cursor-pointer">
+                      Events
+                    </Link>
                     {user && (
                       <Link href="/dashboard" className="cursor-pointer">
                         Dashboard
@@ -187,6 +189,9 @@ const Navbar = () => {
               <Link href="/Course" className="cursor-pointer px-3">
                 Courses
               </Link>
+              <Link href="/Events" className="cursor-pointer">
+                      Events
+                    </Link>
               {user && (
                 <Link href="/dashboard" className="cursor-pointer px-3">
                   Dashboard
