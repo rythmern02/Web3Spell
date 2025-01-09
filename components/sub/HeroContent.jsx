@@ -85,9 +85,9 @@ const HeroContent = () => {
             isMobile ? "text-sm my-0" : isTablet ? "text-md my-0" : "text-lg"
           } text-slate-400`}
         >
-          Unleash your inner Solana sorcerer! Our interactive courses empower
+          Unleash your inner Blockchain sorcerer! Our interactive courses empower
           you to master the magic of blockchain, DeFi, and smart contracts on
-          Solana. Forge a path to a wondrous Web3 career at Web3Spell. Shape the
+          Blockchain. Forge a path to a wondrous Web3 career at Web3Spell. Shape the
           future of the decentralized universe!
         </motion.p>
         {user?.name != null ? (
