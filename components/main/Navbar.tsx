@@ -73,17 +73,18 @@ const Navbar = () => {
                     <Link href="/" className="cursor-pointer">
                       Home
                     </Link>
-                    <Link href="/Course" className="cursor-pointer">
-                      Courses
-                    </Link>
-                     <Link href="/Events" className="cursor-pointer">
-                      Events
-                    </Link>
+
                     {user && (
                       <Link href="/dashboard" className="cursor-pointer">
                         Dashboard
                       </Link>
                     )}
+                    <Link href="/Course" className="cursor-pointer">
+                      Courses
+                    </Link>
+                    <Link href="/Events" className="cursor-pointer">
+                      Events
+                    </Link>
                     <Link href="/Guides" className="cursor-pointer">
                       Guides
                     </Link>
@@ -186,17 +187,17 @@ const Navbar = () => {
               <Link href="/" className="cursor-pointer px-3">
                 Home
               </Link>
-              <Link href="/Course" className="cursor-pointer px-3">
-                Courses
-              </Link>
-              <Link href="/Events" className="cursor-pointer">
-                      Events
-                    </Link>
               {user && (
                 <Link href="/dashboard" className="cursor-pointer px-3">
                   Dashboard
                 </Link>
               )}
+              <Link href="/Course" className="cursor-pointer px-3">
+                Courses
+              </Link>
+              <Link href="/Events" className="cursor-pointer px-3">
+                Events
+              </Link>
               <Link href="/Guides" className="cursor-pointer px-3">
                 Guides
               </Link>

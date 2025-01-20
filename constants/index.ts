@@ -1,4 +1,10 @@
 export const Skill_data = [
+  {
+    skill_name: "Arbitrum",
+    Image: "/Arbitrum.png",
+    width: 120,
+    height: 120
+  },
     {
       skill_name: "Solana",
       Image: "/solanaLogoMark.svg",
