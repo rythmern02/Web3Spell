@@ -13,7 +13,7 @@ export default function EventsPage() {
       time: "11:00",
       description: "Master the fundamentals of blockchain magic in this introductory session.",
       category: "Workshop",  
-      imageUrl: "/CoinDCX.png",
+      imageUrl: "/arbitrum-ig.png",
       spots: 100,
       url: "/arbitrum-ignite"
     }
