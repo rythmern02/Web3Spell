@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
-  "Domain": "web3spell.fun",
-  "Id": "89874a91-11fc-4803-bef2-540df9d21b1b"
-}
