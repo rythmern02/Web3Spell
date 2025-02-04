@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoShowcase = () => {
   return (
-    <div className="container mx-auto py-12 relative z-20 ">
+    <div className="container mx-auto  relative z-20 ">
       <h1 className=" text-center mb-8 sm:mb-1 bg-clip-text text-white py-5 text-2xl md:text-3xl text-[30px]">
         ✨ Trending Spells in Web3Spell ✨
       </h1>

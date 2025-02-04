@@ -28,6 +28,19 @@ export const getCourseList = async () => {
   return result;
 };
 
+export const GetEnrolledCourseIds = async (userEmail) => {
+  const query = gql`
+
+  query GetEnrolledCourseIds {
+    userEnrollCourses(where: { userEmail: "${userEmail}" }) {
+      courseId
+    }
+  }
+`
+  const result = await request(MASTER_URL, query);
+  return result;
+}
+
 export const getCourseById = async (courseId, userEmail) => {
   const query = gql`
     query course {

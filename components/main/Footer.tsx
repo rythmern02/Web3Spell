@@ -64,7 +64,9 @@ const Footer = () => {
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">About</div>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
+              <Link href={'https://mail:rythme@web3spell.fun'}>
               <span className="text-[15px] ml-[6px]">Become Sponsor</span>
+              </Link>
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <Link href={'https://x.com/RythmeNagr64107'}>
@@ -72,13 +74,13 @@ const Footer = () => {
               </Link>
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">web3spell@gmail.com</span>
+              <span className="text-[15px] ml-[6px]">hello@web3spell.fun</span>
             </p>
           </div>
         </div>
 
         <div className="mb-[20px] text-[15px] text-center">
-          &copy; web3spell 2023 Inc. 
+          &copy; web3spell 2025 Inc. 
         </div>
       </div>
     </div>

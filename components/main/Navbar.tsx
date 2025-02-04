@@ -88,6 +88,9 @@ const Navbar = () => {
                     <Link href="/Guides" className="cursor-pointer">
                       Guides
                     </Link>
+                    <Link href="/calendar" className="cursor-pointer">
+                      Calendar
+                    </Link>
                     <div className="flex flex-row gap-4">
                       {!user ? (
                         <Link href={"/sign-in"}>
@@ -200,6 +203,9 @@ const Navbar = () => {
               </Link>
               <Link href="/Guides" className="cursor-pointer px-3">
                 Guides
+              </Link>
+              <Link href="/calendar" className="cursor-pointer">
+                Calendar
               </Link>
             </div>
           </div>
