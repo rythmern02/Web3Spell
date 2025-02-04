@@ -27,7 +27,7 @@ export default function EventsPage() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-lime-900 via-violet-600 to-blue-600 text-transparent bg-clip-text mb-4 p-4"
+            className="text-4xl md:text-6xl font-bold bg-gradient-to-r text-white text-transparent bg-clip-text mb-4 p-4"
           >
             Magical Events
           </motion.h1>
@@ -62,12 +62,12 @@ function EventCard({ event, index }) {
       whileHover={{ scale: 1.02 }}
       className="group"
     >
-      <div className="relative overflow-hidden rounded-lg bg-black/40 border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-300">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="relative overflow-hidden rounded-lg bg-black/40 border border-blue-500/20 backdrop-blur-sm hover:border-blue-500/40 transition-all duration-300">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
         {/* Header */}
         <div className="relative">
-          <div className="absolute top-2 right-2 z-10 px-3 py-1 bg-purple-500/20 rounded-full text-purple-300 text-sm backdrop-blur-sm">
+          <div className="absolute top-2 right-2 z-10 px-3 py-1 bg-purple-500/20 rounded-full text-white text-sm backdrop-blur-sm">
             {event.category}
           </div>
           <div className="relative h-48 overflow-hidden">
@@ -80,10 +80,10 @@ function EventCard({ event, index }) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </div>
           <div className="p-6">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text mb-2">
+            <h3 className="text-2xl font-bold bg-gradient-to-r text-white text-transparent bg-clip-text mb-2">
               {event.title}
             </h3>
-            <p className="text-purple-300/80 text-sm">
+            <p className="text-white text-sm">
               {event.description}
             </p>
           </div>
@@ -91,15 +91,15 @@ function EventCard({ event, index }) {
         
         {/* Content */}
         <div className="px-6 space-y-2">
-          <div className="flex items-center gap-2 text-purple-300">
+          <div className="flex items-center gap-2 text-white">
             <CalendarIcon className="w-4 h-4" />
             <span className="text-sm">{new Date(event.date).toLocaleDateString()}</span>
           </div>
-          <div className="flex items-center gap-2 text-purple-300">
+          <div className="flex items-center gap-2 text-white">
             <ClockIcon className="w-4 h-4" />
             <span className="text-sm">{event.time}</span>
           </div>
-          <div className="flex items-center gap-2 text-purple-300">
+          <div className="flex items-center gap-2 text-white">
             <UsersIcon className="w-4 h-4" />
             <span className="text-sm">{event.spots} spots available</span>
           </div>
@@ -109,7 +109,7 @@ function EventCard({ event, index }) {
         <div className="p-6">
             <Link href={'/arbitrum-ignite'}>
           <button 
-            className="w-full py-2 px-4 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] transform hover:-translate-y-0.5"
+            className="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] transform hover:-translate-y-0.5"
             >
             Register Now
           </button>
