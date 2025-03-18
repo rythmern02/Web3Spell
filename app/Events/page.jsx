@@ -15,7 +15,7 @@ export default function EventsPage() {
       category: "Workshop",  
       imageUrl: "/arbitrum-ig.png",
       spots: 100,
-      url: "/arbitrum-ignite"
+      url: "/core-nexus"
     }
   ]
 
@@ -35,7 +35,7 @@ export default function EventsPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="flex items-center justify-center gap-2 text-xl text-purple-300"
+            className="flex items-center justify-center gap-2 text-xl text-white"
           >
             <SparkleIcon className="w-6 h-6 animate-pulse" />
             <p>Discover the Next Web3 Adventure</p>

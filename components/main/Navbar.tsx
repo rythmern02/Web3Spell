@@ -1,13 +1,16 @@
 "use client";
+import { disableNavWithFooter } from "@/utils/disableNavWithFooter";
 import { UserButton, useUser } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [screenSize, setScreenSize] = useState("desktop");
   const [isOpen, setIsOpen] = useState(false);
   const { isLoaded, isSignedIn, user } = useUser();
+  const path = usePathname()
   useEffect(() => {
     const checkScreenSize = () => {
       const width = window.innerWidth;
@@ -35,6 +38,8 @@ const Navbar = () => {
   {
     if (isMobile) {
       return (
+        <>
+         {!disableNavWithFooter.includes(path) && (
         <div
           className={`navbar fixed top-0 right-0 w-full z-50 transition-transform duration-500 ease-in-out backdrop-filter backdrop-blur-lg ${
             isOpen ? "translate-y-0 " : "-translate-y-full mt-[55px]"
@@ -168,9 +173,13 @@ const Navbar = () => {
             </div>
           )}
         </div>
+          )};
+         </>
       );
     }
     return (
+      <>
+      {!disableNavWithFooter.includes(path) && (
       <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#170a6053]/50  bg-[#03001417]  backdrop-blur-md z-50 px-10 hellonav">
         <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
           <Link
@@ -284,7 +293,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      )};
+      </>
     );
+    
   }
 };
 
