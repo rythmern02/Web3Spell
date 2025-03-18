@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -133,10 +134,12 @@ export default function Hero() {
               <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
               <span className="absolute inset-0 w-full h-full border border-white rounded-full opacity-10"></span>
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-5"></span>
+              <Link href="https://lu.ma/ksvbgx68">
               <span className="relative flex items-center">
                 Register for Bootcamp
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
+              </Link>
             </motion.button>
 
             <motion.button
@@ -151,10 +154,12 @@ export default function Hero() {
               <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
               <span className="absolute inset-0 w-full h-full border border-white rounded-full opacity-10"></span>
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-5"></span>
+              <Link href={'https://dorahacks.io/hackathon/core-nexus/'}>
               <span className="relative flex items-center">
                 Register for Hackathon
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
+              </Link>
             </motion.button>
           </motion.div>
           <motion.div
@@ -175,7 +180,7 @@ export default function Hero() {
               <div className="relative group">
                 <div className="absolute -inset-0.5 bg-white opacity-10 rounded-lg blur-sm group-hover:opacity-20 transition duration-300"></div>
                 <div className="relative bg-black/30 backdrop-blur-md p-6 rounded-lg border border-white/20 group-hover:border-white/40 transition duration-300">
-                  <h3 className="text-3xl font-bold text-white mb-2">2</h3>
+                  <h3 className="text-3xl font-bold text-white mb-2">3</h3>
                   <p className="text-gray-300">Days of Hackathon</p>
                 </div>
               </div>

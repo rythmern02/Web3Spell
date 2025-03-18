@@ -92,7 +92,7 @@ export default function Partners() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h3 className="text-2xl font-semibold text-white/70 mb-12">Main Partner</h3>
+            <h3 className="text-2xl font-semibold text-white/70 mb-12">Key Partners</h3>
             <div className="flex justify-center">
               <motion.a
                 href={partners.main.link}
@@ -105,7 +105,7 @@ export default function Partners() {
                 className="relative group w-96 h-48"
               >
                 <div className="absolute -inset-0.5 bg-white/10 rounded-lg blur-sm group-hover:bg-white/20 transition duration-300"></div>
-                <div className="relative bg-black  group-hover:border-white/50 transition-all duration-300 rounded-lg p-8 w-full h-full flex items-center justify-center">
+                <div className="relative bg-black  transition-all duration-300 rounded-lg p-8 w-full h-full flex items-center justify-center">
                   <img 
                     src={partners.main.logo}
                     alt={partners.main.name}
@@ -119,7 +119,7 @@ export default function Partners() {
           {/* Strategic Partners */}
           <div className="space-y-16">
             <h3 className="text-2xl font-semibold text-white/70 text-center">Strategic Partners</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
               {partners.strategic.map((partner, index) => (
                 <motion.a
                   href={partner.link}
@@ -150,7 +150,7 @@ export default function Partners() {
           {/* Community Partners */}
           <div className="space-y-16">
             <h3 className="text-2xl font-semibold text-white/70 text-center">Community Partners</h3>
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
               {partners.community.map((partner, index) => (
                 <motion.a
                   href={partner.link}

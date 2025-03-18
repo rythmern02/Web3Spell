@@ -8,6 +8,7 @@ import WhoWeAre from "./components/who-we-are"
 import Footer from "./components/footer"
 import StarField from "./components/star-field"
 import GeometricShapes from "./components/geometric-shapes"
+import FaqContent from "./components/faq-content"
 
 export const metadata = {
   suppressNav: true
@@ -26,6 +27,7 @@ export default function Home() {
         <HackathonDetails />
         <Mentors />
         <Partners />
+        <FaqContent/>
         <Footer />
       </div>
     </main>

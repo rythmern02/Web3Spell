@@ -4,6 +4,7 @@ import React from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 import { Calendar, Clock, MapPin, Trophy, Users, Zap, ArrowRight, Brain, Gamepad2, Shield, Network } from "lucide-react"
+import Link from "next/link"
 
 export default function HackathonDetails() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -73,7 +74,7 @@ export default function HackathonDetails() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white">Date</h4>
-                      <p className="text-gray-300">19-20th APRIL</p>
+                      <p className="text-gray-300">19-21st APRIL</p>
                     </div>
                   </div>
 
@@ -245,10 +246,12 @@ export default function HackathonDetails() {
             <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
             <span className="absolute inset-0 w-full h-full border border-white rounded-full opacity-10"></span>
             <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-5"></span>
+            <Link href="https://dorahacks.io/hackathon/core-nexus/">
             <span className="relative flex items-center">
               Register for Hackathon
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </span>
+            </Link>
           </motion.button>
         </motion.div>
 

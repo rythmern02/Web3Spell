@@ -35,7 +35,7 @@ export default function Footer() {
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
               Explore the cosmos of blockchain innovation with Arbitrum at Core Nexus. Join us for 12 days of workshops
-              and a 2-day hackathon.
+              and a 3-day hackathon.
             </p>
             <div className="flex space-x-4">
               <Link href="https://x.com/web3spell" className="text-gray-400 hover:text-white transition-colors">

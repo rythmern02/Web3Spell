@@ -1,3 +1,3 @@
 export const disableNavWithFooter = [
-    "/arbitrum-ignite"
+    "/core-nexus"
   ]
