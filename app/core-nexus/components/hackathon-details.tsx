@@ -74,7 +74,7 @@ export default function HackathonDetails() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white">Date</h4>
-                      <p className="text-gray-300">19-21st APRIL</p>
+                      <p className="text-gray-300">19-20 APRIL</p>
                     </div>
                   </div>
 
@@ -84,7 +84,7 @@ export default function HackathonDetails() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white">Duration</h4>
-                      <p className="text-gray-300">48 hours of non-stop innovation</p>
+                      <p className="text-gray-300">36 hours of non-stop innovation</p>
                     </div>
                   </div>
 
@@ -105,7 +105,7 @@ export default function HackathonDetails() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white">Team Size</h4>
-                      <p className="text-gray-300">2-5 members per team</p>
+                      <p className="text-gray-300">1-4 members per team</p>
                     </div>
                   </div>
                 </div>
@@ -131,11 +131,11 @@ export default function HackathonDetails() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white">Prize Pool</h4>
-                      <p className="text-gray-300">₹5,00,000+ in Cash Prizes</p>
+                      <p className="text-gray-300">$10,000+ worth of Prizes</p>
                       <p className="text-sm text-emerald-400 mt-1">Special Perks:</p>
                       <ul className="text-sm text-gray-300 mt-1 list-disc list-inside ml-2">
                         <li>Direct internship opportunities</li>
-                        <li>API credits worth $5000 and more</li>
+                        <li>High Quality Networking Opportunities</li>
                         <li>Access to exclusive mentorship programs</li>
                         <li>Access to Top tier blockchain investment Opportunities</li>
                       </ul>
@@ -277,43 +277,33 @@ export default function HackathonDetails() {
 
           <div className="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-white before:via-purple-500 before:to-transparent before:shadow-[0_0_15px_rgba(255,255,255,0.5)]">
             {[
-              {
-                day: "Day 1 - April 19: The Grand Summoning Begins!",
-                events: [
-                  { time: "10:00 AM", title: "Gates to the Wizard's Realm Open", desc: "Step into the enchanted venue, collect your wizard robes (swag), and meet fellow spellcasters" },
-                  { time: "11:00 AM", title: "The Sorcerer's Oath: Opening Ceremony", desc: "The High Council reveals the ancient scrolls of hackathon rules" },
-                  { time: "12:00 PM", title: "Spellcasting Workshops & Wizard's Academy", desc: "Learn Web3 magic with expert enchanters and choose your school of wizardry" },
-                  { time: "1:30 PM", title: "Feast of the Elders", desc: "Magical lunch before unleashing your first incantations" },
-                  { time: "2:30 PM", title: "The Great Summoning: Hacking Begins!", desc: "Teams start brewing their enchanted projects" },
-                  { time: "5:00 PM", title: "Wizardry Quests & Fun Challenges", desc: "Mini-games, meme battles, and cryptic Web3 riddles" },
-                  { time: "8:00 PM", title: "Potion Brewing (Dinner Break)", desc: "Refuel your mana with delicious food" },
-                  { time: "10:00 PM", title: "Magical Jamming Session & Chill Zone", desc: "Acoustic tunes and Web3 convos under the starry night" },
-                  { time: "12:00 AM", title: "Midnight Wizard's Duel", desc: "Secret coding challenges and surprise bounties" },
-                  { time: "1:30 AM", title: "Midnight Snacks & Energy Potions", desc: "Coffee and snacks to power through the night" }
-                ]
-              },
-              {
-                day: "Day 2 - April 20: The Journey into the Arcane Depths",
-                events: [
-                  { time: "8:00 AM", title: "Dawn of the Spellcasters", desc: "Breakfast & special morning bounties" },
-                  { time: "12:00 PM", title: "Check-in with the Grand Wizards", desc: "Refine your projects with mentor guidance" },
-                  { time: "2:00 PM", title: "The Grand Feast & Networking", desc: "Break and mingle with fellow sorcerers" },
-                  { time: "4:00 PM", title: "The Dark Hour", desc: "Debugging & final enhancements" },
-                  { time: "8:00 PM", title: "Wizard's Game Night", desc: "Multiplayer games and Web3-themed scavenger hunt" },
-                  { time: "11:00 PM", title: "Midnight Feast", desc: "Power snacks and Web3 strategy talks" }
-                ]
-              },
-              {
-                day: "Day 3 - April 21: The Final Spell & The Grand Battle",
-                events: [
-                  { time: "8:00 AM", title: "Final Dawn", desc: "Last debugging and demo preparations" },
-                  { time: "10:00 AM", title: "The Hourglass Turns", desc: "Hacking ends! Projects ready for judgment" },
-                  { time: "11:00 AM", title: "The Grand Showcase", desc: "Teams present their magical creations" },
-                  { time: "2:00 PM", title: "Battle of the Titans", desc: "Final judging round" },
-                  { time: "4:00 PM", title: "The Coronation", desc: "Prize ceremony & closing rituals" },
-                  { time: "6:00 PM", title: "The Final Celebration", desc: "Dance of the Wizards & Networking" }
-                ]
-              }
+             {
+    "day": "Day 1 – April 19: The Grand Kickoff",
+    "events": [
+      { "time": "10:00 AM", "title": "Doors Open", "desc": "Arrive, collect swag, and meet fellow builders." },
+      { "time": "11:00 AM", "title": "Opening Ceremony", "desc": "Hackathon briefing, rules, and keynote speeches." },
+      { "time": "12:00 PM", "title": "Workshops & Tech Talks", "desc": "Expert-led sessions on Web3, Arbitrum, and blockchain development." },
+      { "time": "1:30 PM", "title": "Lunch Break", "desc": "Fuel up before the hacking begins." },
+      { "time": "2:30 PM", "title": "Hacking Begins!", "desc": "Teams start working on their projects." },
+      { "time": "5:00 PM", "title": "Mini Challenges & Fun Activities", "desc": "Engage in Web3 trivia, coding challenges, and interactive games." },
+      { "time": "8:00 PM", "title": "Dinner Break", "desc": "Recharge and network with fellow hackers." },
+      { "time": "10:00 PM", "title": "Late Night Hacking & Chill Zone", "desc": "Push your project further or unwind with music and casual talks." },
+      { "time": "12:00 AM", "title": "Mentor Round 1", "desc": "Experts review projects, provide feedback, and suggest improvements." },
+      { "time": "1:30 AM", "title": "Midnight Snacks", "desc": "Grab coffee and snacks to power through the night." }
+    ]
+  },
+  {
+    "day": "Day 2 – April 20: The Final Stretch",
+    "events": [
+      { "time": "8:00 AM", "title": "Morning Kickstart", "desc": "Breakfast and last-minute refinements." },
+      { "time": "10:30 AM", "title": "Mentor Round 2", "desc": "Final opportunity for teams to refine their projects based on expert advice." },
+      { "time": "12:00 PM", "title": "Project Submissions Deadline", "desc": "Final submissions must be completed by this time." },
+      { "time": "12:30 PM", "title": "Lunch & Networking", "desc": "Take a break and connect with fellow hackers and industry leaders." },
+      { "time": "2:00 PM", "title": "Live Demos & Judging", "desc": "Teams present their projects to judges and attendees." },
+      { "time": "7:00 PM", "title": "Closing Ceremony & Awards", "desc": "Announcing winners, distributing prizes, and celebrating the journey." },
+      { "time": "8:00 PM", "title": "Hackathon Wrap-Up", "desc": "Final goodbyes and networking before departure." }
+    ]
+  }
             ].map((day, dayIndex) => (
               <div key={day.day} className="relative group">
                 <div className="ml-10 flex flex-col space-y-4">
