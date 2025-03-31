@@ -35,7 +35,7 @@ export default function WhoWeAre() {
     },
     {
       icon: <Users className="h-8 w-8" />,
-      count: "200+",
+      count: "300+",
       label: "Community Members",
       description: "Built a vibrant community of blockchain enthusiasts and developers",
     },

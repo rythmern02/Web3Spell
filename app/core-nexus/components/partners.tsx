@@ -7,25 +7,30 @@ import { ArrowRight, Link } from "lucide-react"
 const partners = {
   main: {
     name: "Arbitrum",
-    logo: "/Arbitrum.png",
+    logo: "/arbitrum-white.png",
     link: "https://arbitrum.io"
+  },
+  platform: {
+    name: "Dorahacks",
+    logo: "/dorahacks.svg",
+    link: "https://dorahacks.com"
   },
   strategic: [
     {
-      name: "Devoic",
-      logo: "/devoic.png",
-      link: "https://devoic.com"
+      name: "Civic",
+      logo: "/civic.png",
+      link: "https://www.civic.com/"
     },
     {
-      name: "Dorahacks",
-      logo: "/dorahacks.png",
-      link: "https://dorahacks.com"
+      name: "QuillAudits AI",
+      logo: "/quillaudits.svg",
+      link: ""
     },
     {
-      name: "GetBlock",
-      logo: "/getblock.png",
-      link: "https://getblock.io"
-    }
+      name: ".xyz",
+      logo: "/xyz.png",
+      link: "https://gen.xyz"
+    },
     // Add more strategic partners as needed
   ],
   community: [
@@ -35,15 +40,15 @@ const partners = {
       link: "https://bhopaldao.xyz"
     },
     {
-      name: "The Origin Guild",
-      logo: "/og.png",
+      name: "Blockchain Orbit",
+      logo: "/orbit.png",
       link: "/"
     },
     {
-      name: "TPG_Bhopal",
-      logo: "/tpg.png",
+      name: "The Origin Guild",
+      logo: "/og.png",
       link: "/"
-    },
+    },    
     {
       name: "LucknowDao",
       logo: "/lucknowdao.png",
@@ -93,7 +98,7 @@ export default function Partners() {
             className="text-center"
           >
             <h3 className="text-2xl font-semibold text-white/70 mb-12">Key Partners</h3>
-            <div className="flex justify-center">
+            <div className="grid grid-cols-1 gap-8">
               <motion.a
                 href={partners.main.link}
                 target="_blank"
@@ -102,15 +107,17 @@ export default function Partners() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4 }}
                 viewport={{ once: true }}
-                className="relative group w-96 h-48"
+                className="flex items-center justify-center"
               >
-                <div className="absolute -inset-0.5 bg-white/10 rounded-lg blur-sm group-hover:bg-white/20 transition duration-300"></div>
-                <div className="relative bg-black  transition-all duration-300 rounded-lg p-8 w-full h-full flex items-center justify-center">
-                  <img 
-                    src={partners.main.logo}
-                    alt={partners.main.name}
-                    className="w-56 h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
+                <div className="relative group w-full h-32">
+                  <div className="absolute -inset-0.5 bg-white/5 rounded-lg blur-sm group-hover:bg-white/10 transition duration-300"></div>
+                  <div className="relative bg-black transition-all duration-300 rounded-lg p-6 w-full h-full flex items-center justify-center">
+                    <img 
+                      src={partners.main.logo}
+                      alt={partners.main.name}
+                      className="w-auto h-40 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-80 sm:w-auto"
+                    />
+                  </div>
                 </div>
               </motion.a>
             </div>
@@ -138,7 +145,7 @@ export default function Partners() {
                       <img 
                         src={partner.logo}
                         alt={partner.name}
-                        className="w-auto h-20 opacity-70 group-hover:opacity-100 transition-all duration-300"
+                        className="w-auto h-10 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-20 sm:w-auto"
                       />
                     </div>
                   </div>
@@ -169,7 +176,7 @@ export default function Partners() {
                       <img 
                         src={partner.logo}
                         alt={partner.name}
-                        className="w-auto h-20 opacity-70 group-hover:opacity-100 transition-all duration-300"
+                        className="w-auto h-10 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-20 sm:w-auto"
                       />
                     </div>
                   </div>
@@ -177,9 +184,41 @@ export default function Partners() {
               ))}
             </div>
           </div>
+
+          {/* Platform Partner - Dorahacks */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h3 className="text-2xl font-semibold text-white/70 mb-12">Platform Partner</h3>
+            <div className="flex justify-center">
+              <motion.a
+                href={partners.platform.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4 }}
+                viewport={{ once: true }}
+                className="relative group w-[32rem] h-56"
+              >
+                <div className="absolute -inset-0.5 bg-white/10 rounded-lg blur-sm group-hover:bg-white/20 transition duration-300"></div>
+                <div className="relative bg-black transition-all duration-300 rounded-lg p-8 w-full h-full flex items-center justify-center">
+                  <img 
+                    src={partners.platform.logo}
+                    alt={partners.platform.name}
+                    className="w-auto h-20 opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              </motion.a>
+            </div>
+          </motion.div>
         </div>
 
-        <div className="py-16"></div>
+        <div className="py-8"></div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

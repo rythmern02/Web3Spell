@@ -44,7 +44,7 @@ export default function Footer() {
               <Link href="https://instagram.com/web3spell" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </Link>
-              <Link href="https://linkedin.com/web3spell" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.linkedin.com/company/web3spell" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link href="https://github.com/rythmern02/web3spell" className="text-gray-400 hover:text-white transition-colors">

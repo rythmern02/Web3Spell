@@ -131,13 +131,30 @@ export default function HackathonDetails() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white">Prize Pool</h4>
-                      <p className="text-gray-300">$10,000+ worth of Prizes</p>
-                      <p className="text-sm text-emerald-400 mt-1">Special Perks:</p>
-                      <ul className="text-sm text-gray-300 mt-1 list-disc list-inside ml-2">
-                        <li>Direct internship opportunities</li>
-                        <li>High Quality Networking Opportunities</li>
-                        <li>Access to exclusive mentorship programs</li>
-                        <li>Access to Top tier blockchain investment Opportunities</li>
+                      <div className="mt-2 mb-4">
+                        <span className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                          $15,000+
+                        </span>
+                        <span className="text-xl text-gray-300 ml-2">Worth of Prizes</span>
+                      </div>
+                      <p className="text-sm text-emerald-400 font-semibold uppercase tracking-wider mb-2">Special Perks:</p>
+                      <ul className="text-sm text-gray-300 space-y-2">
+                        <li className="flex items-center">
+                          <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-2"></span>
+                          Direct internship opportunities
+                        </li>
+                        <li className="flex items-center">
+                          <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-2"></span>
+                          High Quality Networking Opportunities
+                        </li>
+                        <li className="flex items-center">
+                          <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-2"></span>
+                          Access to exclusive mentorship programs
+                        </li>
+                        <li className="flex items-center">
+                          <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-2"></span>
+                          Access to Top tier blockchain investment Opportunities
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -159,16 +176,6 @@ export default function HackathonDetails() {
                     <div>
                       <h4 className="text-lg font-semibold text-white">Networking</h4>
                       <p className="text-gray-300">Connect with partners and potential investors</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="mt-1 mr-4 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white">
-                      <Zap className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-white">Deployment Opportunities</h4>
-                      <p className="text-gray-300">Chance to deploy on Arbitrum ecosystem</p>
                     </div>
                   </div>
                 </div>
@@ -246,7 +253,7 @@ export default function HackathonDetails() {
             <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
             <span className="absolute inset-0 w-full h-full border border-white rounded-full opacity-10"></span>
             <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-5"></span>
-            <Link href="https://dorahacks.io/hackathon/core-nexus/">
+            <Link href="https://lu.ma/ksvbgx68">
             <span className="relative flex items-center">
               Register for Hackathon
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

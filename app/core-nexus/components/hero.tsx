@@ -86,11 +86,11 @@ export default function Hero() {
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white tracking-tighter">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 text-white tracking-tighter">
               <span className="relative inline-block">
                 Core
                 <motion.span
-                  className="absolute -bottom-2 left-0 w-full h-1 bg-white"
+                  className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-1 bg-white"
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
                   transition={{ delay: 1, duration: 0.8 }}
@@ -99,7 +99,7 @@ export default function Hero() {
               <span className="relative inline-block ml-2">
                 Nexus
                 <motion.span
-                  className="absolute -bottom-2 left-0 w-full h-1 bg-white"
+                  className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-1 bg-white"
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
                   transition={{ delay: 1.2, duration: 0.8 }}
@@ -154,7 +154,7 @@ export default function Hero() {
               <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
               <span className="absolute inset-0 w-full h-full border border-white rounded-full opacity-10"></span>
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-5"></span>
-              <Link href={'https://dorahacks.io/hackathon/core-nexus/'}>
+              <Link href={'https://lu.ma/ozoqjknu'}>
               <span className="relative flex items-center">
                 Register for Hackathon
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -180,7 +180,7 @@ export default function Hero() {
               <div className="relative group">
                 <div className="absolute -inset-0.5 bg-white opacity-10 rounded-lg blur-sm group-hover:opacity-20 transition duration-300"></div>
                 <div className="relative bg-black/30 backdrop-blur-md p-6 rounded-lg border border-white/20 group-hover:border-white/40 transition duration-300">
-                  <h3 className="text-3xl font-bold text-white mb-2">3</h3>
+                  <h3 className="text-3xl font-bold text-white mb-2">2</h3>
                   <p className="text-gray-300">Days of Hackathon</p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function Hero() {
               <div className="relative group">
                 <div className="absolute -inset-0.5 bg-white opacity-10 rounded-lg blur-sm group-hover:opacity-20 transition duration-300"></div>
                 <div className="relative bg-black/30 backdrop-blur-md p-6 rounded-lg border border-white/20 group-hover:border-white/40 transition duration-300">
-                  <h3 className="text-3xl font-bold text-white mb-2">TIT</h3>
+                  <h3 className="text-3xl font-bold text-white mb-2"> TIT Bhopal</h3>
                   <p className="text-gray-300">Venue</p>
                 </div>
               </div>
