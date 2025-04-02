@@ -12,8 +12,8 @@ const partners = {
   },
   platform: {
     name: "Dorahacks",
-    logo: "/dorahacks.svg",
-    link: "https://dorahacks.com"
+    logo: "/dorahacks-white.png",
+    link: "https://dorahacks.io"
   },
   strategic: [
     {
@@ -24,7 +24,7 @@ const partners = {
     {
       name: "QuillAudits AI",
       logo: "/quillaudits.svg",
-      link: ""
+      link: "https://www.quillaudits.com/"
     },
     {
       name: ".xyz",
@@ -34,6 +34,11 @@ const partners = {
     // Add more strategic partners as needed
   ],
   community: [
+    {
+      name: "ActualOne",
+      logo: "/actualone.png",
+      link: "https://actualone.xyz"
+    },
     {
       name: "BhopalDao",
       logo: "/bhopaldao.png",
