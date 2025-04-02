@@ -103,7 +103,7 @@ export default function Partners() {
             className="text-center"
           >
             <h3 className="text-2xl font-semibold text-white/70 mb-12">Key Partners</h3>
-            <div className="grid grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 gap-8 place-items-center">
               <motion.a
                 href={partners.main.link}
                 target="_blank"
@@ -131,7 +131,7 @@ export default function Partners() {
           {/* Strategic Partners */}
           <div className="space-y-16">
             <h3 className="text-2xl font-semibold text-white/70 text-center">Strategic Partners</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 place-items-center">
               {partners.strategic.map((partner, index) => (
                 <motion.a
                   href={partner.link}
@@ -162,7 +162,7 @@ export default function Partners() {
           {/* Community Partners */}
           <div className="space-y-16">
             <h3 className="text-2xl font-semibold text-white/70 text-center">Community Partners</h3>
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 place-items-center">
               {partners.community.map((partner, index) => (
                 <motion.a
                   href={partner.link}
