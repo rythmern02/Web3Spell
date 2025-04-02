@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Github, Linkedin, Twitter } from "lucide-react"
+import { motion } from "framer-motion";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 const judges = [
   {
@@ -9,20 +9,34 @@ const judges = [
     role: "DevRel at Plume Network",
     image: "/rachit.jpg?height=200&width=200",
     bio: "Developer Relations expert specializing in blockchain ecosystem development",
+    Twitter: "https://x.com/rachitag112",
+    Linkedin:"https://www.linkedin.com/in/rachitag112/"
   },
   {
     name: "Grahil Khandelwal",
     role: "Ecosystem at Mantra Network",
     image: "/grahil.webp?height=200&width=200",
     bio: "Experienced in building and nurturing blockchain ecosystems",
+    Twitter: "https://x.com/grahilk",
+    Linkedin:"https://www.linkedin.com/in/grahilkhandelwal/"
   },
   {
     name: "Sanket Agarwal",
     role: "QuillAI Network",
     image: "/sanket.jpeg?height=200&width=200",
     bio: "Ensuring AI Agents don't go rogue | Cheff at QuillAI Network",
+    Twitter: "https://x.com/",
+    Linkedin: "https://www.linkedin.com/in/gmsanketagarwal/"
   },
-]
+  {
+    name: "Dayitva Goel",
+    role: "Ecosystem at Uniswap",
+    image: "/dayitva.jpg?height=200&width=200",
+    bio: "Building and growing the Uniswap ecosystem | DeFi enthusiast and blockchain ecosystem developer",
+    Twitter: "https://x.com/dayitva_goel",
+    Linkedin: "https://www.linkedin.com/in/gmsanketagarwal/"
+  },
+];
 
 export default function Judges() {
   return (
@@ -39,7 +53,7 @@ export default function Judges() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white tracking-tighter">
             <span className="relative inline-block">
-                Visionary Judges
+              Visionary Judges
               <motion.span
                 className="absolute -bottom-2 left-0 w-full h-1 bg-white"
                 initial={{ width: 0 }}
@@ -50,7 +64,8 @@ export default function Judges() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Meet our esteemed panel of judges who will evaluate your innovative projects
+            Meet our esteemed panel of judges who will evaluate your innovative
+            projects
           </p>
         </motion.div>
 
@@ -101,7 +116,9 @@ export default function Judges() {
                   </div>
 
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-white mb-1">{judge.name}</h3>
+                    <h3 className="text-xl font-bold text-white mb-1">
+                      {judge.name}
+                    </h3>
                     <p className="text-white/70 text-sm mb-3">{judge.role}</p>
                     <p className="text-gray-400 text-sm">{judge.bio}</p>
                   </div>
@@ -118,9 +135,11 @@ export default function Judges() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <p className="text-gray-300 mb-4">Stay tuned as we announce more distinguished judges!</p>
+          <p className="text-gray-300 mb-4">
+            Stay tuned as we announce more distinguished judges!
+          </p>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
