@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 
 const judges = [
   {
@@ -34,7 +35,7 @@ const judges = [
     image: "/dayitva.jpg?height=200&width=200",
     bio: "Building and growing the Uniswap ecosystem | DeFi enthusiast and blockchain ecosystem developer",
     Twitter: "https://x.com/dayitva_goel",
-    Linkedin: "https://www.linkedin.com/in/gmsanketagarwal/"
+    Linkedin: "https://www.linkedin.com/in/dayitvagoel/"
   },
 ];
 
@@ -103,14 +104,9 @@ export default function Judges() {
                         whileTap={{ scale: 0.9 }}
                         className="w-7 h-7 rounded-full border border-white/30 bg-black flex items-center justify-center text-white hover:border-white/60"
                       >
+                      <Link href={judge.Linkedin}>
                         <Linkedin className="h-3 w-3" />
-                      </motion.button>
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="w-7 h-7 rounded-full border border-white/30 bg-black flex items-center justify-center text-white hover:border-white/60"
-                      >
-                        <Github className="h-3 w-3" />
+                      </Link>
                       </motion.button>
                     </div>
                   </div>

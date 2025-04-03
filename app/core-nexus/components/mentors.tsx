@@ -9,25 +9,41 @@ const mentors = [
     role: "Blockchain Expert",
     image: "/rythme.webp?height=200&width=200",
     bio: "Blockchain specialist with expertise in Arbitrum ecosystem",
+    Twitter: "https://x.com/RythmeNagr64107",
+    Linkedin: "https://www.linkedin.com/in/rythme-nagrani-170ab1265/"
   },
   {
     name: "Sumit Choudhary",
     role: "Smart Contract Developer",
     image: "/sumit.jpg?height=200&width=200",
     bio: "Experienced smart contract developer and security expert",
+    Twitter: "https://x.com/itscoolsem",
+    Linkedin: "https://www.linkedin.com/in/coolsem/"
   },
   {
     name: "Kushagra Sarathe",
     role: "DeFi Specialist",
     image: "/kushagra.webp?height=200&width=200",
     bio: "DeFi expert with deep knowledge of financial protocols",
+    Twitter: "https://x.com/kushagrasarathe",
+    Linkedin: "https://www.linkedin.com/in/kushagrasarathe"
   },
   {
     name: "Eshan Sharma",
     role: "Full Stack Developer",
     image: "/eshan.webp?height=200&width=200",
     bio: "Full stack developer with focus on blockchain applications",
+    Twitter: "https://x.com/Eshan_Sharma__",
+    Linkedin: "https://www.linkedin.com/in/eshan-s-a87b12190/"
   },
+  {
+    name: "Itachi Uchiha",
+    role: "Developer Relations",
+    image: "/itachi.jpg?height=200&width=200",
+    bio: "Developer Advocate at Hackquest and AvoWallet",
+    Twitter: "https://x.com/ItachiOnChain",
+    Linkedin: ""
+  }
 ]
 
 export default function Mentors() {
