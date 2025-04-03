@@ -30,7 +30,7 @@ const judges = [
   },
   {
     name: "Dayitva Goel",
-    role: "Ecosystem at Uniswap",
+    role: "Developer Support at Uniswap Foundation",
     image: "/dayitva.jpg?height=200&width=200",
     bio: "Building and growing the Uniswap ecosystem | DeFi enthusiast and blockchain ecosystem developer",
     Twitter: "https://x.com/dayitva_goel",
