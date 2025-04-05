@@ -22,9 +22,9 @@ const partners = {
       link: "https://www.civic.com/"
     },
     {
-      name: "QuillAudits AI",
+      name: "Quill AI Network",
       logo: "/quillaudits.svg",
-      link: "https://www.quillaudits.com/"
+      link: "https://quillai.network/"
     },
     {
       name: ".xyz",
