@@ -50,6 +50,11 @@ const partners = {
       link: "https://bhopaldao.xyz"
     },
     {
+      name: "Wizz",
+      logo: "/wizz.png",
+      link: "https://wizzhq.xyz"
+    },
+    {
       name: "Blockchain Orbit",
       logo: "/orbit.png",
       link: "/"
@@ -57,6 +62,11 @@ const partners = {
     {
       name: "MetaFields",
       logo: "/metafields.png",
+      link: "/"
+    },
+    {
+      name: "Hack Tour India",
+      logo: "/hacktourindia.png",
       link: "/"
     },
     {
@@ -73,6 +83,11 @@ const partners = {
       name: "OdishaDao",
       logo: "/odishadao.svg",
       link: "/"
+    },
+    {
+      name: "Coding Club SATI",
+      logo: "/sati.png",
+      link: "https://wizzhq.xyz"
     },
     // Add more community partners as needed
   ]
