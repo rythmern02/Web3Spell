@@ -1,40 +1,40 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ArrowRight, Link } from "lucide-react"
+import { motion } from "framer-motion";
+import { ArrowRight, Link } from "lucide-react";
 
 // Partners data structure
 const partners = {
   main: {
     name: "Arbitrum",
     logo: "/arbitrum-white.png",
-    link: "https://arbitrum.io"
+    link: "https://arbitrum.io",
   },
   platform: {
     name: "Dorahacks",
     logo: "/dorahacks-white.png",
-    link: "https://dorahacks.io"
+    link: "https://dorahacks.io",
   },
   strategic: [
     {
       name: "Civic",
       logo: "/civic.png",
-      link: "https://www.civic.com/"
+      link: "https://www.civic.com/",
     },
     {
       name: "Quill AI Network",
       logo: "/quillaudits.svg",
-      link: "https://quillai.network/"
+      link: "https://quillai.network/",
     },
     {
       name: "Verbwire",
       logo: "/verbwire.svg",
-      link: "https://www.verbwire.com/"
+      link: "https://www.verbwire.com/",
     },
     {
       name: ".xyz",
       logo: "/xyz.png",
-      link: "https://gen.xyz"
+      link: "https://gen.xyz",
     },
     // Add more strategic partners as needed
   ],
@@ -42,56 +42,66 @@ const partners = {
     {
       name: "ActualOne",
       logo: "/actualone.png",
-      link: "https://actualone.xyz"
+      link: "https://actualone.xyz",
     },
     {
       name: "BhopalDao",
       logo: "/bhopaldao.png",
-      link: "https://bhopaldao.xyz"
+      link: "https://bhopaldao.xyz",
     },
     {
       name: "Wizz",
       logo: "/wizz.png",
-      link: "https://wizzhq.xyz"
+      link: "https://wizzhq.xyz",
     },
     {
       name: "Blockchain Orbit",
       logo: "/orbit.png",
-      link: "/"
+      link: "/",
     },
     {
       name: "MetaFields",
       logo: "/metafields.png",
-      link: "/"
+      link: "/",
     },
     {
       name: "Hack Tour India",
       logo: "/hacktourindia.png",
-      link: "/"
+      link: "/",
     },
     {
       name: "The Origin Guild",
       logo: "/og.png",
-      link: "/"
-    },    
+      link: "/",
+    },
     {
       name: "LucknowDao",
       logo: "/lucknowdao.png",
-      link: "/"
+      link: "/",
     },
     {
       name: "OdishaDao",
       logo: "/odishadao.svg",
-      link: "/"
+      link: "/",
     },
     {
       name: "Coding Club SATI",
       logo: "/sati.png",
-      link: "https://wizzhq.xyz"
+      link: "",
+    },
+    {
+      name: "fluxor",
+      logo: "/fluxor.png",
+      link: "https://www.fluxor.io",
+    },
+    {
+      name: "Dev-Station",
+      logo: "/devstation.png",
+      link: "https://devstations.xyz",
     },
     // Add more community partners as needed
-  ]
-}
+  ],
+};
 
 export default function Partners() {
   return (
@@ -132,7 +142,9 @@ export default function Partners() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h3 className="text-2xl font-semibold text-white/70 mb-12">Key Partners</h3>
+            <h3 className="text-2xl font-semibold text-white/70 mb-12">
+              Key Partners
+            </h3>
             <div className="grid grid-cols-1 gap-8 place-items-center">
               <motion.a
                 href={partners.main.link}
@@ -147,7 +159,7 @@ export default function Partners() {
                 <div className="relative group w-full h-32">
                   <div className="absolute -inset-0.5 bg-white/5 rounded-lg blur-sm group-hover:bg-white/10 transition duration-300"></div>
                   <div className="relative bg-black transition-all duration-300 rounded-lg p-6 w-full h-full flex items-center justify-center">
-                    <img 
+                    <img
                       src={partners.main.logo}
                       alt={partners.main.name}
                       className="w-auto h-40 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-80 sm:w-auto"
@@ -160,7 +172,9 @@ export default function Partners() {
 
           {/* Strategic Partners */}
           <div className="space-y-16">
-            <h3 className="text-2xl font-semibold text-white/70 text-center">Strategic Partners</h3>
+            <h3 className="text-2xl font-semibold text-white/70 text-center">
+              Strategic Partners
+            </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 place-items-center">
               {partners.strategic.map((partner, index) => (
                 <motion.a
@@ -177,7 +191,7 @@ export default function Partners() {
                   <div className="relative group w-full h-32">
                     <div className="absolute -inset-0.5 bg-white/5 rounded-lg blur-sm group-hover:bg-white/10 transition duration-300"></div>
                     <div className="relative bg-black transition-all duration-300 rounded-lg p-6 w-full h-full flex items-center justify-center">
-                      <img 
+                      <img
                         src={partner.logo}
                         alt={partner.name}
                         className="w-auto h-16 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-24 sm:w-auto object-contain max-w-[80%]"
@@ -191,7 +205,9 @@ export default function Partners() {
 
           {/* Community Partners */}
           <div className="space-y-16">
-            <h3 className="text-2xl font-semibold text-white/70 text-center">Community Partners</h3>
+            <h3 className="text-2xl font-semibold text-white/70 text-center">
+              Community Partners
+            </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 place-items-center">
               {partners.community.map((partner, index) => (
                 <motion.a
@@ -208,7 +224,7 @@ export default function Partners() {
                   <div className="relative group w-full h-24">
                     <div className="absolute -inset-0.5 bg-white/5 rounded-lg blur-sm group-hover:bg-white/10 transition duration-300"></div>
                     <div className="relative bg-black  transition-all duration-300 rounded-lg p-4 w-full h-full flex items-center justify-center">
-                      <img 
+                      <img
                         src={partner.logo}
                         alt={partner.name}
                         className="w-auto h-16 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-24 sm:w-auto object-contain max-w-[80%]"
@@ -228,7 +244,9 @@ export default function Partners() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h3 className="text-2xl font-semibold text-white/70 mb-12">Platform Partner</h3>
+            <h3 className="text-2xl font-semibold text-white/70 mb-12">
+              Platform Partner
+            </h3>
             <div className="flex justify-center">
               <motion.a
                 href={partners.platform.link}
@@ -242,7 +260,7 @@ export default function Partners() {
               >
                 <div className="absolute -inset-0.5 bg-white/10 rounded-lg blur-sm group-hover:bg-white/20 transition duration-300"></div>
                 <div className="relative bg-black transition-all duration-300 rounded-lg p-8 w-full h-full flex items-center justify-center">
-                  <img 
+                  <img
                     src={partners.platform.logo}
                     alt={partners.platform.name}
                     className="w-auto h-20 opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -264,35 +282,37 @@ export default function Partners() {
         >
           <div className="absolute -inset-0.5 bg-white/5 rounded-lg blur-sm"></div>
           <div className="relative bg-black p-8 md:p-12 rounded-lg border border-white/20 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Become a Partner</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+              Become a Partner
+            </h3>
             <p className="text-gray-300 max-w-2xl mx-auto mb-6">
-              Join us in shaping the future of blockchain technology. Partner with Core Nexus to connect with innovative
-              developers and projects.
+              Join us in shaping the future of blockchain technology. Partner
+              with Core Nexus to connect with innovative developers and
+              projects.
             </p>
 
             <a href="mailto:rythme@web3spell.fun">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-white bg-transparent border border-white rounded-full shadow-2xl"
-            >
-              <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-white group-hover:opacity-10"></span>
-              <span className="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
-              <span className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
-              <span className="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
-              <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
-              <span className="absolute inset-0 w-full h-full border border-white rounded-full opacity-10"></span>
-              <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-5"></span>
-              <span className="relative flex items-center">
-                Partner With Us
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
-            </motion.button>
-              </a>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-white bg-transparent border border-white rounded-full shadow-2xl"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-white group-hover:opacity-10"></span>
+                <span className="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
+                <span className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
+                <span className="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
+                <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
+                <span className="absolute inset-0 w-full h-full border border-white rounded-full opacity-10"></span>
+                <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-5"></span>
+                <span className="relative flex items-center">
+                  Partner With Us
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </motion.button>
+            </a>
           </div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-
