@@ -134,26 +134,6 @@ export default function Hero() {
               <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
               <span className="absolute inset-0 w-full h-full border border-white rounded-full opacity-10"></span>
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-5"></span>
-              <Link href="https://lu.ma/ksvbgx68">
-              <span className="relative flex items-center">
-                Register for Bootcamp
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
-              </Link>
-            </motion.button>
-
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-white bg-transparent border border-white rounded-full shadow-2xl"
-            >
-              <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-r from-white via-white to-white group-hover:opacity-10"></span>
-              <span className="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
-              <span className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
-              <span className="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
-              <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
-              <span className="absolute inset-0 w-full h-full border border-white rounded-full opacity-10"></span>
-              <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-56 opacity-5"></span>
               <Link href={'https://lu.ma/ozoqjknu'}>
               <span className="relative flex items-center">
                 Register for Hackathon
@@ -188,8 +168,8 @@ export default function Hero() {
               <div className="relative group">
                 <div className="absolute -inset-0.5 bg-white opacity-10 rounded-lg blur-sm group-hover:opacity-20 transition duration-300"></div>
                 <div className="relative bg-black/30 backdrop-blur-md p-6 rounded-lg border border-white/20 group-hover:border-white/40 transition duration-300">
-                  <h3 className="text-3xl font-bold text-white mb-2"> TIT Bhopal</h3>
-                  <p className="text-gray-300">Venue</p>
+                  <h3 className="text-3xl font-bold text-white mb-2"> Hybrid</h3>
+                  <p className="text-gray-300">Place</p>
                 </div>
               </div>
             </div>

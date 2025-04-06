@@ -27,6 +27,11 @@ const partners = {
       link: "https://quillai.network/"
     },
     {
+      name: "Verbwire",
+      logo: "/verbwire.svg",
+      link: "https://www.verbwire.com/"
+    },
+    {
       name: ".xyz",
       logo: "/xyz.png",
       link: "https://gen.xyz"
@@ -57,6 +62,11 @@ const partners = {
     {
       name: "LucknowDao",
       logo: "/lucknowdao.png",
+      link: "/"
+    },
+    {
+      name: "OdishaDao",
+      logo: "/odishadao.svg",
       link: "/"
     },
     // Add more community partners as needed
@@ -150,7 +160,7 @@ export default function Partners() {
                       <img 
                         src={partner.logo}
                         alt={partner.name}
-                        className="w-auto h-10 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-20 sm:w-auto"
+                        className="w-auto h-16 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-24 sm:w-auto object-contain max-w-[80%]"
                       />
                     </div>
                   </div>
@@ -162,7 +172,7 @@ export default function Partners() {
           {/* Community Partners */}
           <div className="space-y-16">
             <h3 className="text-2xl font-semibold text-white/70 text-center">Community Partners</h3>
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 place-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 place-items-center">
               {partners.community.map((partner, index) => (
                 <motion.a
                   href={partner.link}
@@ -181,7 +191,7 @@ export default function Partners() {
                       <img 
                         src={partner.logo}
                         alt={partner.name}
-                        className="w-auto h-10 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-20 sm:w-auto"
+                        className="w-auto h-16 opacity-70 group-hover:opacity-100 transition-all duration-300 sm:h-24 sm:w-auto object-contain max-w-[80%]"
                       />
                     </div>
                   </div>

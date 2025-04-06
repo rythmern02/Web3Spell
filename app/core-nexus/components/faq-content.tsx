@@ -18,23 +18,23 @@ const faqData = [
       },
       {
         question: "When and where is the hackathon happening?",
-        answer: "The hackathon will take place on April 19-21, 2024, in Bhopal, India. It will be an exciting 48-hour non-stop building experience!"
+        answer: "The hackathon will take place on April 19-20, 2025. It will be a hybrid event with both in-person participation in City of Lakes, Bhopal (venue to be announced soon) and virtual participation options. Get ready for an exciting 36-hour non-stop building experience!"
       },
       {
         question: "Who can participate?",
-        answer: "Anyone passionate about Web3! Whether you're a developer, designer, blockchain enthusiast, or entrepreneur, you are welcome to join."
+        answer: "Anyone passionate about Web3! Whether you're a developer, designer, blockchain enthusiast, or entrepreneur, you are welcome to join. You can participate either virtually or in-person."
       },
       {
         question: "Do I need prior blockchain experience?",
-        answer: "No, but it helps! We'll have workshops and mentors to guide beginners and help you build on blockchain from scratch."
+        answer: "No, but it helps! We'll have workshops and mentors to guide beginners and help you build on blockchain from scratch. Our mentors will be available both online and on-site."
       },
       {
         question: "Is the event in-person or virtual?",
-        answer: "The event is completely in-person in Bhopal. No virtual participation this time!"
+        answer: "Core Nexus is a hybrid hackathon! You can choose to participate in-person at our Bhopal venue or join virtually from anywhere in the world. Both formats offer full access to mentorship, workshops, and prizes."
       },
       {
         question: "Can I come alone or do I need a team?",
-        answer: "You can come solo or with a team! If you don't have a team, no worries—we'll have a team formation session to help you find the right people."
+        answer: "You can come solo or with a team! If you don't have a team, no worries—we'll have team formation sessions both online and in-person to help you find the right people."
       }
     ]
   },
@@ -92,19 +92,19 @@ const faqData = [
     questions: [
       {
         question: "Will food and drinks be provided?",
-        answer: "Yes! We'll have meals, snacks, and caffeine-filled drinks to keep you energized throughout the 48-hour hackathon."
+        answer: "Yes! For in-person participants at our Bhopal venue, we'll provide meals, snacks, and caffeine-filled drinks throughout the 36-hour hackathon. Virtual participants are encouraged to stock up their favorite snacks!"
       },
       {
         question: "Are there fun activities apart from hacking?",
-        answer: "Expect jamming sessions, mini-games, meme battles, treasure hunts, and midnight snacks to keep the vibe fun!"
+        answer: "Absolutely! We'll have both virtual and in-person activities including online gaming sessions, meme battles, virtual treasure hunts, and networking events. On-site participants can enjoy additional physical activities and networking opportunities!"
       },
       {
         question: "Is there a limit on team size?",
-        answer: "Teams can have a maximum of 4 members. If you're solo, we'll help you find a team on-site."
+        answer: "Teams can have a maximum of 4 members, whether participating virtually or in-person. Mixed teams with both virtual and in-person members are also welcome!"
       },
       {
         question: "Can I stay overnight at the venue?",
-        answer: "Yes! The venue will be open 24/7, and we encourage you to bring sleeping bags or blankets for short rest breaks."
+        answer: "Yes! For in-person participants, the Bhopal venue will be open 24/7 during the hackathon. We encourage you to bring sleeping bags or blankets for short rest breaks."
       }
     ]
   },

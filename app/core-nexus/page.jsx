@@ -17,10 +17,10 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-black text-white overflow-hidden z-30" data-page="arbitrum-ignite">
+    <main className="fixed inset-0 bg-black text-white overflow-hidden z-30" data-page="arbitrum-ignite">
       <StarField />
       <GeometricShapes />
-      <div className="relative z-10">
+      <div className="relative z-10 h-full overflow-y-auto">
         <Navbar />
         <Hero />
         <WhoWeAre />

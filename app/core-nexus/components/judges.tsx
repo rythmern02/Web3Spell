@@ -97,7 +97,9 @@ export default function Judges() {
                         whileTap={{ scale: 0.9 }}
                         className="w-7 h-7 rounded-full border border-white/30 bg-black flex items-center justify-center text-white hover:border-white/60"
                       >
+                        <Link href={judge.Twitter}>
                         <Twitter className="h-3 w-3" />
+                        </Link>
                       </motion.button>
                       <motion.button
                         whileHover={{ scale: 1.1 }}

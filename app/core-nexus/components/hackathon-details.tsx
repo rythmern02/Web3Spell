@@ -51,7 +51,7 @@ export default function HackathonDetails() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            After 12 days of cosmic exploration, put your skills to the test in our 2-day hackathon at TIT
+            Join our 2-day hybrid hackathon and build the future of Web3 - participate in-person in Bhopal or virtually from anywhere in the galaxy
           </p>
         </motion.div>
 
@@ -94,8 +94,8 @@ export default function HackathonDetails() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white">Venue</h4>
-                      <p className="text-gray-300">TIT Campus - Main Auditorium</p>
-                      <p className="text-sm text-gray-400 mt-1">Different from the workshop venue</p>
+                      <p className="text-gray-300">Bhopal - Venue TBD</p>
+                      <p className="text-sm text-emerald-400 mt-1">Hybrid Event - Join In-Person or Virtually from Anywhere!</p>
                     </div>
                   </div>
 
@@ -106,6 +106,17 @@ export default function HackathonDetails() {
                     <div>
                       <h4 className="text-lg font-semibold text-white">Team Size</h4>
                       <p className="text-gray-300">1-4 members per team</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="mt-1 mr-4 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white">
+                      <Zap className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-white">Technology Stack</h4>
+                      <p className="text-gray-300">Arbitrum Stylus</p>
+                      <p className="text-sm text-emerald-400 mt-1">Build high-performance dApps with native Rust support</p>
                     </div>
                   </div>
                 </div>
@@ -307,8 +318,8 @@ export default function HackathonDetails() {
       { "time": "12:00 PM", "title": "Project Submissions Deadline", "desc": "Final submissions must be completed by this time." },
       { "time": "12:30 PM", "title": "Lunch & Networking", "desc": "Take a break and connect with fellow hackers and industry leaders." },
       { "time": "2:00 PM", "title": "Live Demos & Judging", "desc": "Teams present their projects to judges and attendees." },
-      { "time": "7:00 PM", "title": "Closing Ceremony & Awards", "desc": "Announcing winners, distributing prizes, and celebrating the journey." },
-      { "time": "8:00 PM", "title": "Hackathon Wrap-Up", "desc": "Final goodbyes and networking before departure." }
+      { "time": "4:30 PM", "title": "Closing Ceremony & Awards", "desc": "Announcing winners, distributing prizes, and celebrating the journey." },
+      { "time": "6:00 PM", "title": "Hackathon Wrap-Up", "desc": "Final goodbyes and networking before departure." }
     ]
   }
             ].map((day, dayIndex) => (

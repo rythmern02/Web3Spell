@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Github, Linkedin, Twitter } from "lucide-react"
+import Link from "next/link"
 
 const mentors = [
   {
@@ -103,14 +104,18 @@ export default function Mentors() {
                         whileTap={{ scale: 0.9 }}
                         className="w-7 h-7 rounded-full border border-white/30 bg-black flex items-center justify-center text-white hover:border-white/60"
                       >
+                        <Link href={mentor.Twitter}>
                         <Twitter className="h-3 w-3" />
+                        </Link>
                       </motion.button>
                       <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-7 h-7 rounded-full border border-white/30 bg-black flex items-center justify-center text-white hover:border-white/60"
                       >
+                        <Link href={mentor.Linkedin}>
                         <Linkedin className="h-3 w-3" />
+                        </Link>
                       </motion.button>
                       <motion.button
                         whileHover={{ scale: 1.1 }}
@@ -141,15 +146,7 @@ export default function Mentors() {
           className="mt-12 text-center"
         >
           <p className="text-gray-300 mb-4">More industry experts will be joining us for the hackathon!</p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="group relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium text-white bg-transparent border border-white/30 rounded-full"
-          >
-            <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-white group-hover:opacity-10"></span>
-            <span className="relative">View All Mentors</span>
-          </motion.button>
-        </motion.div>
+                  </motion.div>
       </div>
     </section>
   )
