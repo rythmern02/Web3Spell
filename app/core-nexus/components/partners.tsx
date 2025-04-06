@@ -55,6 +55,11 @@ const partners = {
       link: "/"
     },
     {
+      name: "MetaFields",
+      logo: "/metafields.png",
+      link: "/"
+    },
+    {
       name: "The Origin Guild",
       logo: "/og.png",
       link: "/"
