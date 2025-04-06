@@ -91,7 +91,7 @@ const partners = {
     },
     {
       name: "fluxor",
-      logo: "/fluxor.png",
+      logo: "/fluxor.jpg",
       link: "https://www.fluxor.io",
     },
     {
