@@ -300,9 +300,8 @@ export default function HackathonDetails() {
     "events": [
       { "time": "10:00 AM", "title": "Doors Open", "desc": "Arrive, collect swag, and meet fellow builders." },
       { "time": "11:00 AM", "title": "Opening Ceremony", "desc": "Hackathon briefing, rules, and keynote speeches." },
-      { "time": "12:00 PM", "title": "Workshops & Tech Talks", "desc": "Expert-led sessions on Web3, Arbitrum, and blockchain development." },
-      { "time": "1:30 PM", "title": "Lunch Break", "desc": "Fuel up before the hacking begins." },
-      { "time": "2:30 PM", "title": "Hacking Begins!", "desc": "Teams start working on their projects." },
+      { "time": "12:30 PM", "title":  "Hacking Begins!", "desc": "Teams start working on their projects." },
+      { "time": "2:00 PM", "title": "Lunch Break", "desc": "Fuel up before the hacking begins." },
       { "time": "5:00 PM", "title": "Mini Challenges & Fun Activities", "desc": "Engage in Web3 trivia, coding challenges, and interactive games." },
       { "time": "8:00 PM", "title": "Dinner Break", "desc": "Recharge and network with fellow hackers." },
       { "time": "10:00 PM", "title": "Late Night Hacking & Chill Zone", "desc": "Push your project further or unwind with music and casual talks." },
