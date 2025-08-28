@@ -33,9 +33,10 @@ const SkillDataProvider = ({ src, width, height, index} : Props) => {
   >
     <Image
 src={src}
-width={width}
-height={height}
 alt='skill image'
+width={48}
+height={48}
+style={{ height: '48px', width: 'auto', objectFit: 'contain' }}
     />
   </motion.div>
   )

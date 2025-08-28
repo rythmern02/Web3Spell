@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/Course/page.jsx", "components/main/Courses.jsx", "app/_services/index.js", "app/course-preview/[courseId]/page.jsx", "app/course-preview/_component/Options.jsx", "app/course-preview/_component/EnrollmentSection.jsx", "app/(potions)/view-potions/[potionId]/_component/PotionNav.jsx", "components/sub/HeroContent.jsx", "app/dashboard/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/Course/page.tsx", "components/main/Courses.jsx", "app/_services/index.js", "app/course-preview/[courseId]/page.jsx", "app/course-preview/_component/Options.jsx", "app/course-preview/_component/EnrollmentSection.jsx", "app/(potions)/view-potions/[potionId]/_component/PotionNav.jsx", "components/sub/HeroContent.jsx", "app/dashboard/page.jsx"],
   "exclude": ["node_modules"]
 }

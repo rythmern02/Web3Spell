@@ -8,15 +8,15 @@ export default function EventsPage() {
   const events = [
     {
       id: 1,
-      title: "Core Nexus",
-      date: "2025-03-20",
-      time: "02:30",
+      title: "Ethglobal Co-working Hours Bhopal",
+      date: "2025-09-11",
+      time: "11:00",
       description:
         "Master the fundamentals of blockchain magic in this Amazing Course.",
       category: "Workshop & Hackathon",
-      imageUrl: "/core-nexus.png",
-      spots: 200,
-      url: "/core-nexus",
+      imageUrl: "/events/cowork-eth.avif",
+      spots: 40,
+      url: "https://luma.com/ethglobal-cowork-bhopal",
     },
   ];
 
@@ -76,7 +76,8 @@ function EventCard({ event, index }) {
               src={event.imageUrl}
               alt={event.title}
               fill
-              className="object-cover"
+
+              className="bg-contain"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </div>
@@ -107,7 +108,7 @@ function EventCard({ event, index }) {
         </div>
 
         {/* Footer */}
-        <Link href={"/core-nexus"} passHref>
+        <Link href={event.url} passHref>
           <div className="p-6">
             <button className="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] transform hover:-translate-y-0.5">
               Register Now

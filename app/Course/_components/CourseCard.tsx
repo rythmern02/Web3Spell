@@ -9,7 +9,7 @@ interface Props {
 
 const CourseCard = ({ src, title, description }: Props) => {
   return (
-    <div className="relative overflow-hidden cursor-pointer rounded-lg shadow-lg border border-blue-900 ">
+    <div className="relative overflow-hidden cursor-pointer rounded-lg shadow-lg ">
         <Image
           src={src}
           alt={title}
