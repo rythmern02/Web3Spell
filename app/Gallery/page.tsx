@@ -13,8 +13,7 @@ interface MousePosition {
 
 const DisneyGallery: React.FC = () => {
   const wrapperRef = useRef<HTMLDivElement>(null)
-  const isInView = useInView(wrapperRef, { once: true, margin: "-100px" });
-
+  const isInView = useInView(wrapperRef, { once: true, margin: "-100px" })
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
@@ -35,7 +34,7 @@ const DisneyGallery: React.FC = () => {
       document.removeEventListener("mousemove", handleMouseMove)
     }
   }, [])
- 
+
   const handleFullscreen = () => {
     if (document.documentElement.requestFullscreen) {
       document.documentElement.requestFullscreen()
@@ -47,7 +46,7 @@ const DisneyGallery: React.FC = () => {
     "https://res.cloudinary.com/ducsu6916/image/upload/v1756375609/WhatsApp_Image_2025-05-13_at_9.23.39_PM_2_-_Copy_-_Copy_aueydm.jpg",
     "https://res.cloudinary.com/ducsu6916/image/upload/v1756375611/WhatsApp_Image_2025-04-13_at_11.34.54_PM_-_Copy_yudeys.jpg",
     "https://res.cloudinary.com/ducsu6916/image/upload/v1756375611/C0039T01_-_Copy_fgmxid.jpg",
-    "https://res.cloudinary.com/ducsu6916/image/upload/v1756376693/IMG_2457_zdbjrr.jpg"
+    "https://res.cloudinary.com/ducsu6916/image/upload/v1756376693/IMG_2457_zdbjrr.jpg",
   ]
 
   const movieImages2 = [
@@ -103,15 +102,15 @@ const DisneyGallery: React.FC = () => {
     delay,
     size = "small",
   }: {
-    delay: number;
-    size?: "small" | "medium" | "large";
+    delay: number
+    size?: "small" | "medium" | "large"
   }) => {
     const sizeClasses = {
       small: "w-1 h-1",
       medium: "w-2 h-2",
       large: "w-3 h-3",
-    };
-  
+    }
+
     return (
       <motion.div
         className={`absolute ${sizeClasses[size]} bg-white/20 rounded-full`}
@@ -135,9 +134,9 @@ const DisneyGallery: React.FC = () => {
           ease: "easeOut",
         }}
       />
-    );
-  };
-  
+    )
+  }
+
   const EnergyBeam = ({ delay }: { delay: number }) => (
     <motion.div
       className="absolute w-px h-20 bg-gradient-to-t from-transparent via-white/40 to-transparent"
@@ -158,24 +157,19 @@ const DisneyGallery: React.FC = () => {
         repeatDelay: Math.random() * 4 + 2,
       }}
     />
-  );
-  
-  return (
+  )
 
+  return (
     <>
-<div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(30)].map((_, i) => (
-          <FloatingOrb
-            key={i}
-            delay={i * 0.2}
-            size={i % 4 === 0 ? "large" : i % 2 === 0 ? "medium" : "small"}
-          />
+          <FloatingOrb key={i} delay={i * 0.2} size={i % 4 === 0 ? "large" : i % 2 === 0 ? "medium" : "small"} />
         ))}
         {[...Array(10)].map((_, i) => (
           <EnergyBeam key={`beam-${i}`} delay={i * 0.3} />
         ))}
       </div>
-        <div className="flex justify-center pb-2 mb-8 relative z-30 mt-20">
+      <div className="flex justify-center pb-2 mb-8 relative z-30 mt-20">
         <motion.h2
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white text-center relative"
           initial={{ opacity: 0, y: -50, scale: 0.8 }}
@@ -235,8 +229,7 @@ const DisneyGallery: React.FC = () => {
             className="absolute -bottom-4 left-1/2 w-3/4 h-1 rounded-full"
             style={{
               transform: "translateX(-50%)",
-              background:
-                "linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent)",
+              background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent)",
               boxShadow: "0 0 20px rgba(255,255,255,0.5)",
             }}
             animate={{
@@ -252,32 +245,30 @@ const DisneyGallery: React.FC = () => {
               repeat: Number.POSITIVE_INFINITY,
             }}
             initial={{ scaleX: 0 }}
-
           />
         </motion.h2>
       </div>
-      
-    <div className={`${styles.container} relative z-20`}>
 
-      <button onClick={handleFullscreen} className={styles.fullscreenBtn}>
-        <Maximize size={24} />
-      </button>
+      <div className={`${styles.container} relative z-20`}>
+        <button onClick={handleFullscreen} className={styles.fullscreenBtn}>
+          <Maximize size={24} />
+        </button>
 
-      <div ref={wrapperRef} className={styles.wrapperImages}>
-        {renderImageLine(movieImages, "line1")}
-        {renderImageLine(movieImages2, "line2")}
-        {renderImageLine(movieImages3, "line3")}
-        {renderImageLine(movieImages, "line4")}
-        {renderImageLine(movieImages2, "line5")}
-        {renderImageLine(movieImages3, "line6")}
-        {renderImageLine(movieImages4, "line7")}
-        {renderImageLine(movieImages5, "line8")}
-        {renderImageLine(movieImages, "line9")}
-        {renderImageLine(movieImages2, "line10")}
-        {renderImageLine(movieImages3, "line11")}
-        {renderImageLine(movieImages4, "line12")}
+        <div ref={wrapperRef} className={styles.wrapperImages}>
+          {renderImageLine(movieImages, "line1")}
+          {renderImageLine(movieImages2, "line2")}
+          {renderImageLine(movieImages3, "line3")}
+          {renderImageLine(movieImages, "line4")}
+          {renderImageLine(movieImages2, "line5")}
+          {renderImageLine(movieImages3, "line6")}
+          {renderImageLine(movieImages4, "line7")}
+          {renderImageLine(movieImages5, "line8")}
+          {renderImageLine(movieImages, "line9")}
+          {renderImageLine(movieImages2, "line10")}
+          {renderImageLine(movieImages3, "line11")}
+          {renderImageLine(movieImages4, "line12")}
+        </div>
       </div>
-    </div>
     </>
   )
 }

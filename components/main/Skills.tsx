@@ -312,29 +312,6 @@ const SkillSection = ({
           ))}
         </div>
 
-        {/* Section status indicator */}
-        <motion.div
-          className="absolute top-4 right-4 flex items-center space-x-2 sm:hidden"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: sectionIndex * 0.3 + 0.5, duration: 0.5 }}
-        >
-          <motion.div
-            className="w-2 h-2 bg-cyan-400 rounded-full"
-            animate={{
-              opacity: [1, 0.3, 1],
-              scale: [1, 0.8, 1],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Number.POSITIVE_INFINITY,
-            }}
-            style={{
-              boxShadow: "0 0 10px rgba(34, 211, 238, 0.5)",
-            }}
-          />
-          <span className="text-white/60 text-xs font-medium">{skills.length} ABILITIES</span>
-        </motion.div>
 
         {/* Energy streams at corners */}
         <div className="absolute top-4 left-4 w-6 h-6 border-l-2 border-t-2 border-white/20 rounded-tl-lg" />

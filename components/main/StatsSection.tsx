@@ -36,6 +36,7 @@ const stats: StatItem[] = [
     label: "Active Wizards",
     value: 417,
     icon: <Users className="w-7 h-7" />,
+    suffix: "+",
     description: "Magical beings exploring the cosmos",
   },
   {
@@ -48,13 +49,16 @@ const stats: StatItem[] = [
   {
     label: "Epic Events",
     value: 66,
+    
     icon: <Calendar className="w-7 h-7" />,
+    suffix: "+",
     description: "Celestial gatherings across dimensions",
   },
   {
     label: "Active Projects",
     value: 9,
     icon: <BookOpen className="w-7 h-7" />,
+    suffix: "+",
     description: "Ancient wisdom teachings unlocked",
   },
 ];
