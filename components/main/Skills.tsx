@@ -314,7 +314,7 @@ const SkillSection = ({
 
         {/* Section status indicator */}
         <motion.div
-          className="absolute top-4 right-4 flex items-center space-x-2"
+          className="absolute top-4 right-4 flex items-center space-x-2 sm:hidden"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: sectionIndex * 0.3 + 0.5, duration: 0.5 }}
