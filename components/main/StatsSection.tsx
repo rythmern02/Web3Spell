@@ -640,9 +640,9 @@ export default function AdvancedStatsSection() {
             </motion.h2>
           </div>
           <motion.p
-            className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed pb-8"
             style={{
-              textShadow: "0 0 10px rgba(255,255,255,0.3)",
+              textShadow: "0 0 10px rgba(255,255,255,0.3) ",
             }}
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
@@ -660,6 +660,7 @@ export default function AdvancedStatsSection() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.6 }}
+            className=""
           >
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {stats.map((stat, index) => (
