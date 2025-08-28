@@ -652,19 +652,7 @@ const Footer = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.2, type: "spring", stiffness: 60 }}
         >
-          {/* Advanced particle system */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {[...Array(40)].map((_, i) => (
-              <CosmicParticle key={i} delay={i * 0.2} type={["orb", "star", "diamond", "triangle"][i % 4] as any} />
-            ))}
-            {[...Array(15)].map((_, i) => (
-              <QuantumBeam
-                key={`beam-${i}`}
-                delay={i * 0.4}
-                direction={["vertical", "horizontal", "diagonal"][i % 3] as any}
-              />
-            ))}
-          </div>
+         
 
           {/* Dynamic cosmic grid */}
           <motion.div
@@ -686,23 +674,6 @@ const Footer = () => {
             }}
           />
 
-          {/* Mouse follower effect */}
-          <motion.div
-            className="absolute w-96 h-96 rounded-full pointer-events-none"
-            style={{
-              background: "radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%)",
-              filter: "blur(40px)",
-            }}
-            animate={{
-              x: mousePosition.x - 192,
-              y: mousePosition.y - 192,
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 50,
-              damping: 30,
-            }}
-          />
 
           {/* Main footer container */}
           <div className="container mx-auto px-8 py-16">
