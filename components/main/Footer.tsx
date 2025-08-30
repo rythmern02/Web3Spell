@@ -775,14 +775,14 @@ const Footer = () => {
                     <motion.div whileHover={{ scale: 1.05, y: -5 }} className="relative">
                       <div className="text-2xl mb-2">✉️</div>
                       <div className="text-white/80 font-medium">Email</div>
-                      <div className="text-white/60 text-sm">web3spell@gmail.com</div>
+                      <div className="text-white/60 text-sm">hello@web3spell.com</div>
                     </motion.div>
 
                     <motion.div whileHover={{ scale: 1.05, y: -5 }} className="relative">
                       <div className="text-2xl mb-2">🤝</div>
                       <div className="text-white/80 font-medium">Sponsor</div>
                       <Link
-                        href="mailto:rythmenagrani@gmail.com"
+                        href="mailto:rythme@web3spell.com"
                         className="text-white/60 text-sm hover:text-white/80 transition-colors"
                       >
                         Become a Partner
