@@ -654,33 +654,12 @@ const Footer = () => {
         >
          
 
-          {/* Dynamic cosmic grid */}
-          <motion.div
-            className="absolute inset-0 opacity-10"
-            style={{
-              backgroundImage: `
-                linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)
-              `,
-              backgroundSize: "60px 60px",
-            }}
-            animate={{
-              backgroundPosition: ["0px 0px", "60px 60px"],
-            }}
-            transition={{
-              duration: 20,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "linear",
-            }}
-          />
+          
 
 
           {/* Main footer container */}
           <div className="container mx-auto px-8 py-16">
-            <AdvancedHolographicBorder className="backdrop-blur-2xl bg-white/[0.02] rounded-[3rem] p-12 relative overflow-hidden">
-              {/* Multiple scan lines */}
-              <HolographicScanLine direction="horizontal" />
-              <HolographicScanLine direction="vertical" />
+           
 
               {/* Quantum field background */}
               <motion.div
@@ -831,7 +810,7 @@ const Footer = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 2, duration: 1 }}
               >
-                <AdvancedHolographicBorder className="inline-block px-12 py-6 rounded-full backdrop-blur-xl bg-white/[0.02]">
+               
                   <motion.div
                     className="text-white/70 font-medium text-lg relative"
                     style={{
@@ -850,14 +829,9 @@ const Footer = () => {
                     }}
                   >
                     ✦ © 2025 Web3Spell Inc. - Weaving Digital Magic Across Infinite Dimensions ✦
-                    {/* Floating particles around copyright */}
-                    <div className="absolute inset-0 pointer-events-none overflow-visible">
-                      {[...Array(8)].map((_, i) => (
-                        <CosmicParticle key={i} delay={i * 0.3} type="star" />
-                      ))}
-                    </div>
+                    
                   </motion.div>
-                </AdvancedHolographicBorder>
+                
               </motion.div>
 
               {/* Energy streams at footer corners */}
@@ -865,7 +839,7 @@ const Footer = () => {
               <div className="absolute top-6 right-6 w-12 h-12 border-r-4 border-t-4 border-white/30 rounded-tr-2xl" />
               <div className="absolute bottom-6 left-6 w-12 h-12 border-l-4 border-b-4 border-white/30 rounded-bl-2xl" />
               <div className="absolute bottom-6 right-6 w-12 h-12 border-r-4 border-b-4 border-white/30 rounded-br-2xl" />
-            </AdvancedHolographicBorder>
+            
           </div>
         </motion.footer>
       )}

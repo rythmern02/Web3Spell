@@ -175,7 +175,7 @@ const DisneyGallery: React.FC = () => {
           initial={{ opacity: 0, y: -50, scale: 0.8 }}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
         >
-          ✦ Gallery {/* Quantum energy field around title */}
+          ✦ Gallery ✦{/* Quantum energy field around title */}
           <motion.div
             className="absolute inset-0 pointer-events-none"
             animate={{
@@ -249,7 +249,7 @@ const DisneyGallery: React.FC = () => {
         </motion.h2>
       </div>
 
-      <div className={`${styles.container} relative z-20`}>
+      <div className={`${styles.container} relative`}>
         <button onClick={handleFullscreen} className={styles.fullscreenBtn}>
           <Maximize size={24} />
         </button>
