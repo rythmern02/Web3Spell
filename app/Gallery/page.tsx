@@ -15,31 +15,6 @@ const DisneyGallery: React.FC = () => {
   const wrapperRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(wrapperRef, { once: true, margin: "-100px" })
 
-  useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      if (!wrapperRef.current) return
-
-      const xPos = event.clientX / window.innerWidth - 0.5
-      const yPos = event.clientY / window.innerHeight - 0.5
-
-      const rotateY = (xPos * 10) / 2
-      const rotateX = (yPos * 10) / -2
-
-      wrapperRef.current.style.transform = `translate3d(-50%, -50%, 0) perspective(800px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`
-    }
-
-    document.addEventListener("mousemove", handleMouseMove)
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove)
-    }
-  }, [])
-
-  const handleFullscreen = () => {
-    if (document.documentElement.requestFullscreen) {
-      document.documentElement.requestFullscreen()
-    }
-  }
 
   const movieImages = [
     "https://res.cloudinary.com/ducsu6916/image/upload/v1756375610/WhatsApp_Image_2025-04-13_at_11.35.04_PM_-_Copy_qo0np3.jpg",
@@ -250,9 +225,6 @@ const DisneyGallery: React.FC = () => {
       </div>
 
       <div className={`${styles.container} relative`}>
-        <button onClick={handleFullscreen} className={styles.fullscreenBtn}>
-          <Maximize size={24} />
-        </button>
 
         <div ref={wrapperRef} className={styles.wrapperImages}>
           {renderImageLine(movieImages, "line1")}
